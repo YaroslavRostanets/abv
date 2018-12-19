@@ -7,7 +7,9 @@
     <title>ABV | Главная</title>
     <link rel="stylesheet" href="../local/templates/main/libs/bootstrap/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="../local/templates/main/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../local/templates/main/libs/slick/slick.css">
     <link rel="stylesheet" href="../local/templates/main/font/stylesheet.css">
+    <link rel="stylesheet" href="../local/templates/main/font/abv-font/css/fontello.css">
     <link rel="stylesheet" href="../local/templates/main/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -92,26 +94,237 @@
         </div>
         <div class="header-bottom">
             <div class="cont">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Features</a>
-                        <a class="nav-item nav-link" href="#">Pricing</a>
-                        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                        <div class="catalog-link-wrap">
+                            <a class="nav-item nav-link" href="#">
+                                <i class="demo-icon icon-group-5587"></i>
+                                Каталог продукции
+                            </a>
+                        </div>
+                        <a class="nav-item nav-link orange" href="#">
+                            <i class="demo-icon icon-discount"></i>
+                            Распродажа
+                        </a>
+                        <a class="nav-item nav-link" href="#">
+                            Услуги
+                        </a>
+                        <a class="nav-item nav-link" href="#">
+                            Инженерам
+                        </a>
+                        <a class="nav-item nav-link" href="#">
+                            Учебный центр
+                        </a>
+                        <a class="nav-item nav-link" href="#">
+                            Прес-центр
+                        </a>
+                        <a class="nav-item nav-link" href="#">
+                            Карьера
+                        </a>
+                        <a class="nav-item nav-link" href="#">
+                            О нас
+                        </a>
+                        <a class="nav-item nav-link" href="#">
+                            Контакты
+                        </a>
                     </div>
                 </nav>
 
             </div>
         </div>
     </header>
-    <main>
+    <main class="home-page">
+        <div class="page-stripe gray-bg">
+            <div class="cont i-block-wrap">
+                <div class="i-block recomm">
+                    <h2>Рекомендуем</h2>
+                    <div class="rec-slider js-rec-slider">
 
+                        <div class="slide-item">
+
+                            <div class="rec-item">
+                                <div class="img-cont">
+                                    <img src="../local/templates/main/img/content/home1.jpg" alt="">
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#" class="prod-name">
+                                        LTV RTI-041 00, 4-канальный
+                                        TVI-видеорегистратор
+                                        для транспорта
+                                    </a>
+                                    <div class="price">
+                                        19 900 руб.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rec-item">
+                                <div class="img-cont">
+                                    <img src="../local/templates/main/img/content/home2.jpg" alt="">
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#" class="prod-name">
+                                        LPA-TrueZone-120,
+                                        микшер-усилитель
+                                    </a>
+                                    <div class="price">
+                                        24 900 руб.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="slide-item">
+
+                            <div class="rec-item">
+                                <div class="img-cont">
+                                    <img src="../local/templates/main/img/content/home1.jpg" alt="">
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#" class="prod-name">
+                                        LTV RTI-041 00, 4-канальный
+                                        TVI-видеорегистратор
+                                        для транспорта
+                                    </a>
+                                    <div class="price">
+                                        19 900 руб.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rec-item">
+                                <div class="img-cont">
+                                    <img src="../local/templates/main/img/content/home2.jpg" alt="">
+                                </div>
+                                <div class="prod-info">
+                                    <a href="#" class="prod-name">
+                                        LPA-TrueZone-120,
+                                        микшер-усилитель
+                                    </a>
+                                    <div class="price">
+                                        24 900 руб.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="i-block text-i-block">
+                    <div class="home-cont-slider js-home-slider">
+                        <div class="item">
+                            <div class="bg"
+                                 style="background-image: url(../local/templates/main/img/content/it-dom.png)"></div>
+                            <div class="item-in">
+                                <h2>IT Домофония</h2>
+                                <div class="text-wrap">
+                                    В наличии много моделей
+                                    на складе и в магазинах
+                                </div>
+                                <ul class="check-group">
+                                    <li>Актуальыне решения для всех</li>
+                                    <li>Совместимость с камерами LTV</li>
+                                    <li>Система мониторинга</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bg"
+                                 style="background-image: url(../local/templates/main/img/content/it-dom.png)"></div>
+                            <div class="item-in">
+                                <h2>Распродажа кабеля</h2>
+                                <div class="text-wrap">
+                                    В наличии много моделей
+                                    на складе и в магазинах
+                                </div>
+                                <ul class="check-group">
+                                    <li>Актуальыне решения для всех</li>
+                                    <li>Совместимость с камерами LTV</li>
+                                    <li>Система мониторинга</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="i-block sell-out-block">
+                    <h2>Распродажа кабеля</h2>
+                    <div class="text-wrap">
+                        Монтаж делают наши партнеры.
+                        Оставьте заявку, и мы порекомендуем
+                        надежную компанию в вашем регионе.
+                    </div>
+                    <a href="#" class="btn btn-std round">
+                        Узнать больше
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page-stripe">
+            <div class="cont">
+                <div class="white-items">
+                    <div class="item">
+                        <i class="demo-icon icon-diagram"></i>
+                        <h2>Оптовые продажи</h2>
+                        <div class="text">
+                            Более 200 лучших брендов,
+                            свыше 200 000 товаров.
+                            Собственные бренды:
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <i class="demo-icon icon-customer-service"></i>
+                        <h2>Тех поддержка</h2>
+                        <ul>
+                            <li>
+                                Помощь при выборе
+                            </li>
+                            <li>
+                                Пуско-наладочные работы
+                            </li>
+                            <li>
+                                Гарантийный ремонт
+                            </li>
+                            <li>
+                                Негарантийное обслуживание
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <i class="demo-icon icon-video"></i>
+                        <h2>Проектирование</h2>
+                        <ul>
+                            <li>Охранно-пожарные системы</li>
+                            <li>Системы оповещения</li>
+                            <li>Системы видеонаблюдения</li>
+                            <li>СКУД</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <i class="demo-icon icon-diagram"></i>
+                        <h2>Монтаж оборудования</h2>
+                        <div class="text">
+                            Монтаж делают наши партнеры.
+                            Оставьте заявку, и мы порекомендуем
+                            надежную компанию в вашем регионе.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
     </footer>
 
     <script src="../local/templates/main/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../local/templates/main/libs/slick/slick.min.js"></script>
     <script src="../local/templates/main/js/main.js"></script>
 </body>
 </html>

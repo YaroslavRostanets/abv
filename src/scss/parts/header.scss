@@ -147,4 +147,40 @@ header {
       font-size: 31px;
     }
   }
+  .header-bottom {
+    .navbar {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .navbar-nav {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .nav-item {
+      font-family: 'Proxima Nova Semibold';
+      font-size: 14px;
+      color: #333333;
+      padding: 7px 10px 4px 10px;
+      &.orange {
+        color: #FD9E0D;
+      }
+      .icon-discount {
+        font-size: 17px;
+      }
+    }
+    .catalog-link-wrap {
+      background: #FAFAFA;
+      .nav-item {
+        padding: 7px 20px 4px 20px;
+        margin-right: -10px;
+      }
+      //padding: 0 20px;
+      .demo-icon {
+        font-size: 12px;
+        margin-right: 9px;
+        color: #F9A924;
+      }
+    }
+  }
 }
