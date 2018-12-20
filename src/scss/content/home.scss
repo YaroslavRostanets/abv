@@ -137,18 +137,112 @@
   }
   .white-items {
     padding-top: 35px;
-    padding-left: 30px;
+    padding-left: 42px;
+    padding-right: 30px;
+    padding-bottom: 35px;
     background: #FFFFFF;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-shadow: 0px 5px 20px 0px rgba(150,98,66,0.15);
     margin-top: -126px;
+    margin-bottom: 70px;
     .item {
       width: 250px;
+      &:nth-child(1) {
+        width: 225px;
+        margin-right: 65px;
+      }
+      &:nth-child(2) {
+        width: 250px;
+        margin-right: 57px;
+      }
+      &:nth-child(4) {
+        width: 260px;
+        margin-left: auto;
+      }
     }
     .demo-icon {
       color: #F9A924;
       font-size: 42px;
+      margin-bottom: 19px;
+      display: block;
+      &:before {
+        margin: 0;
+      }
     }
+    h2 {
+      margin-bottom: 21px;
+    }
+    .icon-customer-service {
+      font-size: 54px;
+      margin-top: -9px;
+      margin-bottom: 10px;
+    }
+  }
+  .block-title {
+    font-size: 22px;
+    font-family: 'Proxima Nova Bold';
+    margin-bottom: 16px;
+  }
+  .brand-search {
+    margin-bottom: 42px;
+  }
+  .brands-wrap {
+    display: flex;
+    align-items: flex-start;
+    .brands-left {
+      border: 1px solid #EAEAEA;
+      border-radius: 3px;
+      padding: 34px 33px;
+      width: 561px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .brands-right {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: calc( 100% - 561px );
+      padding-left: 20px;
+      .btn-outline-brand {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        padding: 5px 15px;
+      }
+      .btn-std {
+        margin-right: 10px;
+        margin-left: auto;
+        margin-bottom: 20px;
+      }
+    }
+    .one-brand {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .news-courses {
+    display: flex;
+    margin-bottom: 105px;
+    .news {
+      width: 335px;
+      padding-right: 42px;
+    }
+    .nearest-courses {
+      width: calc( 100% - 335px );
+    }
+    .title-wrap {
+      margin-bottom: 33px;
+    }
+    .img-cont {
+      margin-right: 20px;
+    }
+    .count-date {
+      display: flex;
+
+    }
+
   }
 }

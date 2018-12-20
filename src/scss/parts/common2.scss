@@ -1,0 +1,43 @@
+.subscripbe-stripe {
+  border-top: 1px solid #FD8E00;
+  & > .cont {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 43px;
+  }
+  .subscribe-title {
+    font-size: 22px;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .after-title {
+    font-size: 14px;
+    color: #707070;
+  }
+  .left-descr {
+    width: 560px;
+  }
+  .subscribe-form {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 14px;
+    .subscribe-field {
+      background: #FAFAFA;
+      height: 40px;
+      color: #909090;
+      font-size: 14px;
+      padding: 0 20px;
+      border-radius: 2px;
+      border: none;
+      width: 428px;
+      margin-right: 30px;
+    }
+    .btn-std {
+      font-size: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
