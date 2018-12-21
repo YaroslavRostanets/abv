@@ -1,0 +1,100 @@
+@media (max-width: 1240px) {
+  .cont {
+    width: 950px;
+  }
+  header {
+    .header-middle {
+      .search-wrap {
+        width: 460px;
+      }
+    }
+  }
+  .subscripbe-stripe {
+    .subscribe-title {
+      font-size: 20px;
+    }
+    .subscribe-form {
+      .subscribe-field {
+        width: 370px;
+      }
+    }
+  }
+  .home-page {
+    .i-block-wrap {
+      .sell-out-block {
+        display: none;
+      }
+      .text-i-block {
+        flex-grow: 1;
+        margin-left: 10px;
+      }
+    }
+    .gray-bg {
+      padding-bottom: 137px;
+      & >.cont {
+        padding-top: 16px;
+      }
+    }
+    .white-items {
+      .item {
+        width: 240px;
+        &:nth-child(2) {
+          margin-right: 25px;
+          width: 235px;
+        }
+        &:nth-child(1) {
+          margin-right: 25px;
+        }
+        &:nth-child(3) {
+          margin-right: 25px;
+        }
+        &:nth-child(4) {
+          width: 240px;
+        }
+      }
+    }
+    .brands-wrap {
+      .one-brand {
+        &:nth-child(2),
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+      .brands-left {
+        width: 230px;
+      }
+      .brands-right {
+        width: calc(100% - 230px);
+        .btn-std {
+          margin-left: 10px;
+        }
+      }
+    }
+    .courses-wrap {
+      .one-course {
+        &:nth-child(n + 3) {
+          display: none;
+        }
+        &:nth-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  footer {
+    .bot-menu-wrap {
+      .bot-menu {
+        column-count: 1;
+        width: auto;
+        font-size: 12px;
+      }
+      .categories {
+        font-size: 12px;
+      }
+    }
+    & > .cont {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+  }
+}

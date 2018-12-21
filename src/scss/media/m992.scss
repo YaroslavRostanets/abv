@@ -1,0 +1,221 @@
+@media (max-width: 992px) {
+  .cont {
+    width: 758px;
+  }
+  header {
+    .header-top {
+      font-size: 12px;
+      .center-part {
+        margin-right: 0;
+        justify-content: flex-start;
+        .address {
+          margin-left: 31px;
+        }
+      }
+      .lang-select {
+        margin-right: 19px;
+      }
+    }
+    .header-middle {
+      .logo {
+        width: 144px;
+      }
+      .logo-cont {
+        margin-right: 36px;
+        .descr {
+          display: none;
+        }
+      }
+      .search-wrap {
+        width: 295px;
+        input[type=text] {
+          font-size: 12px;
+        }
+      }
+      .mini-wrap {
+        margin-right: 6px;
+        margin-top: 9px;
+      }
+      .cont {
+        padding-top: 21px;
+        padding-bottom: 31px;
+      }
+    }
+    .header-bottom {
+      .nav-item {
+        font-size: 12px;
+        padding: 7px 3px 4px;
+        .icon-discount {
+          display: none;
+        }
+      }
+      .catalog-link-wrap {
+        .nav-item {
+          padding: 7px 10px 4px;
+        }
+        .demo-icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .check-group {
+    li {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .courses-wrap {
+    .one-course {
+      margin-bottom: 62px;
+    }
+  }
+  footer {
+    .feedback {
+      display: none;
+    }
+    & > .cont {
+      padding-top: 53px;
+    }
+    .categories {
+      width: 360px;
+      column-gap: 12px;
+    }
+    .bot-menu {
+      margin-right: 47px;
+      margin-left: 25px;
+    }
+    .bot-menu-wrap {
+      & > ul {
+        li {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    .bot-stripe {
+      .small-text {
+        display: none;
+      }
+      .copyright {
+        width: 350px;
+      }
+    }
+    .social-wrap {
+      display: flex;
+    }
+    .social {
+      margin-left: 52px;
+    }
+    .bot-stripe {
+      & >.cont {
+        padding-top: 18px;
+      }
+      .txt {
+        margin-bottom: 0;
+        margin-top: 4px;
+      }
+    }
+  }
+  .home-page {
+    .i-block-wrap {
+      .recomm {
+        width: 280px;
+        .img-cont {
+          width: 70px;
+          min-width: 70px;
+          height: 70px;
+          margin-right: 7px;
+        }
+        .prod-info {
+          font-size: 12px;
+        }
+        .price {
+          font-size: 16px;
+        }
+      }
+    }
+    .home-cont-slider {
+      .item-in {
+        padding-bottom: 35px;
+      }
+    }
+    .white-items {
+      padding: 20px 30px 35px 48px;
+      margin-bottom: 44px;
+      .item {
+        &:nth-child(1) {
+          margin-right: 43px;
+        }
+        &:nth-child(4) {
+          display: none;
+        }
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+        ul {
+          font-size: 12px;
+        }
+        .text {
+          font-size: 12px;
+        }
+      }
+      h2 {
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+      .demo-icon {
+        margin-bottom: 4px;
+      }
+      .icon-customer-service {
+        font-size: 51px;
+        margin-top: -5px;
+        margin-bottom: -4px;
+      }
+    }
+    .brands-wrap {
+      .brands-right {
+        padding-left: 11px;
+        .btn {
+          &:nth-last-child(2) {
+            display: none;
+          }
+          &:nth-last-child(3) {
+            display: none;
+          }
+          &:nth-last-child(4) {
+            display: none;
+          }
+        }
+        .btn-std {
+          margin-left: auto;
+        }
+      }
+    }
+    .block-title {
+      margin-bottom: 16px;
+    }
+    .news-courses {
+      margin-bottom: 59px;
+    }
+  }
+  .subscripbe-stripe {
+    & > .cont {
+      padding-top: 25px;
+      padding-bottom: 29px;
+    }
+    .subscribe-form {
+      padding-top: 32px;
+      .subscribe-field {
+        width: 260px;
+        margin-right: 12px;
+      }
+      .btn-std {
+        font-size: 0;
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

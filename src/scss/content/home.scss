@@ -16,11 +16,14 @@
       background: #FFFFFF;
       box-shadow: 0px 5px 10px 0px rgba(150,98,66,0.15);
       padding: 32px 10px 32px 12px;
+      border-radius: 3px;
     }
     .recomm {
       width: 336px;
       h2 {
         margin-bottom: 24px;
+        padding-left: 19px;
+        padding-right: 19px;
       }
       .img-cont {
         width: 103px;
@@ -146,6 +149,7 @@
     box-shadow: 0px 5px 20px 0px rgba(150,98,66,0.15);
     margin-top: -126px;
     margin-bottom: 70px;
+    border-radius: 3px;
     .item {
       width: 250px;
       &:nth-child(1) {
@@ -202,6 +206,7 @@
     .brands-right {
       display: flex;
       align-items: flex-start;
+      justify-content: flex-end;
       flex-wrap: wrap;
       width: calc( 100% - 561px );
       padding-left: 20px;

@@ -1,4 +1,7 @@
 header {
+  a {
+    text-decoration: none;
+  }
   .header-top {
     border-bottom: 1px solid #E6E6E6;
     .cont {
@@ -122,22 +125,98 @@ header {
     .mini-wishlist {
       border-right: 1px solid #F5F5F5;
       padding-right: 5px;
+      position: relative;
+      &:hover {
+        .tooltip {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
     }
     .mini-comparisons {
       padding: 0 11px;
       border-right: 1px solid #F5F5F5;
+      position: relative;
+      &:hover {
+        .tooltip {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
     }
     .mini-basket {
       padding-left: 7px;
+      position: relative;
+      &:hover {
+        .tooltip {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    .tooltip {
+      position: absolute;
+      padding: 6px 11px 7px 11px;
+      font-size: 12px;
+      width: 130px;
+      border-radius: 30px;
+      top: calc( 100% + 14px );
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: #FFFFFF;
+      box-shadow: 0px 3px 20px 0px rgba(150,98,66,0.15);
+      visibility: hidden;
+      transition: opacity 0.2s ease;
+      &:before {
+        content: '';
+        position: absolute;
+        border: 8px solid transparent;
+        border-bottom: 8px solid #FFF;
+        top: -16px;
+        left: 50%;
+        margin-left: -11px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        height: 16px;
+        width: 100%;
+        display: block;
+        left: 0;
+        top: -16px;
+        z-index: 1;
+        background: transparent;
+      }
     }
     .mini-link {
       color: #333333;
       display: flex;
       align-items: center;
       height: 100%;
+      position: relative;
+      &.has-items {
+        .demo-icon {
+          color: #F9A924;
+        }
+      }
       & > img {
         display: block;
         width: 30px;
+      }
+      .count {
+        position: absolute;
+        right: -7px;
+        top: -9px;
+        height: 18px;
+        width: 18px;
+        border: 2px solid #FFFFFF;
+        background: #FE9B08;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9px;
+        color: #FFFFFF;
+        font-size: 10px;
       }
     }
     .basket-link {

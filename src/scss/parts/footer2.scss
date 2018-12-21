@@ -1,7 +1,101 @@
 footer {
   background: #333333;
-  .cont {
+  & > .cont {
     padding-top: 60px;
     padding-bottom: 70px;
+  }
+  .bot-stripe {
+    background: #292929;
+    color: #A0A0A0;
+    & > .cont {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 29px;
+      padding-bottom: 25px;
+    }
+    .small-text {
+      font-size: 8px;
+    }
+    .txt {
+      font-size: 12px;
+      margin-bottom: 14px;
+    }
+    .copyright {
+      width: 725px;
+    }
+  }
+  .cont-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bot-menu-wrap {
+    display: flex;
+    & > ul {
+      column-count: 2;
+      li {
+        padding-left: 0;
+        margin-bottom: 8px;
+        &:before {
+          display: none;
+        }
+        & > a {
+          color: #A0A0A0;
+        }
+      }
+    }
+  }
+  .feedback {
+    color: #CCCCCC;
+    display: inline-block;
+    margin-bottom: 22px;
+  }
+  .opening-hours {
+    margin-bottom: 13px;
+  }
+  .fot-cont {
+    color: #C3C3C3;
+    .address {
+      margin-bottom: 23px;
+    }
+    .phone-num {
+      a {
+        color: #C3C3C3;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        font-family: 'Proxima Nova Bold';
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .bot-menu {
+    margin-right: 35px;
+    width: 300px;
+    column-gap: 6pc;
+    margin-left: 50px;
+  }
+  .categories {
+    width: 460px;
+    column-gap: 45px;
+  }
+  .mail {
+    font-size: 12px;
+    color: #A0A0A0;
+    display: inline-block;
+    margin-bottom: 13px;
+  }
+  .social-wrap {
+    text-align: right;
+  }
+  .social {
+    a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #A0A0A0;
+      margin-right: 16px;
+    }
+    .icon-youtube {
+      font-size: 15px;
+    }
   }
 }
