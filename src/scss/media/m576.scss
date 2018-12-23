@@ -158,6 +158,9 @@
     }
   }
   footer {
+    & > .cont {
+      padding: 0 0 0 0;
+    }
     .fot-cont {
       display: none;
     }
@@ -166,10 +169,30 @@
       .categories {
         column-count: 1;
       }
+      ul {
+        display: none;
+      }
     }
     .bot-menu {
       width: 100%;
       margin: 0;
+    }
+    .categories-cont {
+      width: 100%;
+    }
+    .bot-menu-cont {
+      width: 100%;
+    }
+    .mobile-link {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #CCCCCC;
+      font-size: 14px;
+      padding: 0 15px;
+      width: 100%;
+
     }
   }
 }
