@@ -30,7 +30,7 @@ footer {
   }
   .bot-menu-wrap {
     display: flex;
-    & > ul {
+    ul {
       column-count: 2;
       li {
         padding-left: 0;
