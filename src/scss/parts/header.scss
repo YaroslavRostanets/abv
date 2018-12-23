@@ -2,6 +2,9 @@ header {
   a {
     text-decoration: none;
   }
+  .mobile-menu-btn {
+    display: none;
+  }
   .header-top {
     border-bottom: 1px solid #E6E6E6;
     .cont {
@@ -249,10 +252,10 @@ header {
       }
     }
     .catalog-link-wrap {
-      background: #FAFAFA;
       .nav-item {
         padding: 7px 20px 4px 20px;
         margin-right: -10px;
+        background: #FAFAFA;
       }
       //padding: 0 20px;
       .demo-icon {

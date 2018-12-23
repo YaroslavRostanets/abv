@@ -57,17 +57,50 @@ $(document).ready(function(){
         };
     })(jQuery);
 
+    function destroySlick(className) {
+        if($(className).hasClass('slick-initialized')) {
+            $(className).slick('unslick');
+        }
+    }
+
     function runMobile(){
         console.log('mobile');
+        $('.js-i-block-wrap').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            //fade: true,
+            draggable: false,
+            centerMode: false,
+            prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
+            nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>'
+        });
+        $('.js-i-block-wrap').slick('slickGoTo', 0);
+
+        $('.js-brands-left').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            draggable: false,
+            centerMode: false,
+            prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
+            nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>'
+        });
+
     }
 
     function runTablet(){
         console.log('tablet');
+        destroySlick('.js-i-block-wrap');
+
 
     }
 
     function runDesctop(){
         console.log('desctop');
+        destroySlick('.js-i-block-wrap');
     }
 
     $(window).getDevice(768,1024);
@@ -85,15 +118,16 @@ $(document).ready(function(){
     );
 
     $('.js-home-slider').slick({
-            dots: false,
-            infinite: true,
-            slidesToShow: 1,
-            adaptiveHeight: true,
-            fade: true,
-            prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
-            nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>'
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        fade: true,
+        prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
+        nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>'
         }
     );
+
 
 
 

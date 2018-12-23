@@ -1,0 +1,210 @@
+@media (max-width: 768px) {
+  .cont {
+    width: 540px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  header {
+    .mobile-menu-btn {
+      display: block;
+      font-size: 14px;
+      margin-right: 10px;
+      color: #333333;
+    }
+    .header-top {
+      display: none;
+    }
+    .header-bottom {
+      display: none;
+    }
+    .header-search {
+      display: none;
+    }
+    .header-middle {
+      .cont {
+        height: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
+        align-items: center;
+      }
+      .mini-comparisons {
+        display: none;
+      }
+      .mini-wishlist {
+        display: none;
+      }
+      .logo {
+        width: 97px;
+      }
+      .basket-link {
+        font-size: 29px;
+      }
+    }
+  }
+  .home-page {
+    .i-block-wrap {
+      & > .slick-list {
+        box-shadow: 0px 5px 10px 0px rgba(150,98,66,0.15);
+        border-radius: 3px;
+        overflow: hidden;
+      }
+      .sell-out-block {
+        display: block;
+      }
+      .i-block {
+        width: 510px !important;
+        box-shadow: none;
+      }
+      .slick-track {
+        display: flex;
+      }
+      .text-i-block {
+        margin-left: 0;
+      }
+      & > .prev-arrow {
+        left: calc( 50% - 4px );
+        top: auto;
+        bottom: -59px;
+        transform: translateX(-100%);
+      }
+      & > .next-arrow {
+        right: calc( 50% - 4px );
+        left: auto;
+        top: auto;
+        bottom: -59px;
+        transform: translateX(100%);
+      }
+      .slick-track {
+        height: auto;
+      }
+    }
+    .white-items {
+      margin-top: -20px;
+      flex-wrap: wrap;
+      padding: 20px 25px 0 25px;
+      .item {
+        width: 50% !important;
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+        &:nth-child(4) {
+          display: block;
+        }
+      }
+    }
+    .brands-wrap {
+      flex-wrap: wrap;
+      .one-brand {
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+        &:last-child {
+          margin-right: auto;
+        }
+        img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .brands-left {
+        width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 36px;
+        .prev-arrow {
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .next-arrow {
+          right: 10px;
+          left: auto;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .brands-right {
+        width: 100%;
+        padding-left: 0;
+        justify-content: flex-start;
+        .btn-outline-brand {
+          display: block !important;
+          margin-left: 0;
+          margin-right: 10px;
+          margin-bottom: 9px;
+        }
+        .btn-std {
+          margin-left: 0;
+        }
+      }
+    }
+    .news-courses {
+      flex-wrap: wrap;
+      .news {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      .nearest-courses {
+        width: 100%;
+      }
+    }
+  }
+  .subscripbe-stripe {
+    & > .cont {
+      flex-wrap: wrap;
+    }
+    .subscribe-form {
+      padding-left: 0;
+      width: 100%;
+    }
+    .subscribe-field {
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+  footer {
+    .cont-menu {
+      flex-wrap: wrap;
+    }
+    .fot-cont {
+      margin-bottom: 20px;
+    }
+    .categories {
+      width: 320px;
+      column-gap: 0px;
+    }
+    .bot-stripe {
+      & > .cont {
+        flex-wrap: wrap;
+      }
+    }
+    .social-wrap {
+      order: 1;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    .social {
+      margin-left: 0;
+      text-align: center;
+    }
+    .bot-stripe {
+      .small-text {
+        display: block;
+      }
+      .copyright {
+        order: 2;
+        width: 100%;
+      }
+      .txt {
+        text-align: center;
+        span {
+          display: block;
+        }
+      }
+      .small-text {
+        text-align: center;
+      }
+    }
+  }
+}

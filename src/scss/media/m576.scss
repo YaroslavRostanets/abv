@@ -1,0 +1,175 @@
+@media (max-width: 576px) {
+  .cont {
+    width: 100%;
+  }
+  .title-wrap {
+    .read-all {
+      font-size: 12px;
+    }
+  }
+  .home-page {
+    .i-block-wrap {
+      h2 {
+        padding: 0 10px;
+      }
+      .sell-out-block {
+        background-position: 0 27%;
+        padding: 32px 10px 32px 20px;
+        h2 {
+          margin-bottom: 154px;
+        }
+        .text-wrap {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        .btn-std {
+          font-size: 14px;
+        }
+      }
+      .i-block {
+        width: 293px !important;
+      }
+    }
+    .gray-bg {
+      & > .cont {
+        padding-top: 33px;
+      }
+    }
+    .home-cont-slider {
+      .item-in {
+        padding: 30px 10px;
+      }
+      .text-wrap {
+        font-size: 14px;
+      }
+      .check-group{
+        font-size: 14px;
+        li {
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .white-items {
+      margin-bottom: 50px;
+      .item {
+        width: 100% !important;
+        margin-bottom: 29px;
+        ul {
+          width: calc( 100% - 66px );
+          float: right;
+        }
+        li {
+          padding-left: 14px;
+        }
+      }
+      .demo-icon {
+        float: left;
+        width: 66px;
+      }
+      h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      .text {
+        width: calc( 100% - 66px );
+        float: right;
+      }
+    }
+    .gray-bg {
+      padding-bottom: 99px;
+    }
+    .block-title {
+      margin-bottom: 12px;
+    }
+    .brands-wrap {
+      .brands-right {
+        margin-right: -15px;
+        min-width: 100%;
+        width: auto;
+      }
+    }
+    .brand-search {
+      margin-bottom: 15px;
+    }
+    .news-courses {
+      .news {
+        padding-right: 0;
+        margin-bottom: 67px;
+      }
+      .title-wrap {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  .courses-wrap {
+    .one-course {
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+      .img-cont {
+        margin-right: 0;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 14px;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      .course-content {
+        width: 100%;
+      }
+      .course-title {
+        margin-bottom: 10px;
+      }
+      .date {
+        font-size: 12px;
+      }
+    }
+  }
+  .subscripbe-stripe {
+    border-top: 1px solid #E8E8E8;
+    .subscribe-title {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    & > .cont {
+      padding-top: 23px;
+      padding-bottom: 38px;
+    }
+    .after-title {
+      font-size: 12px;
+    }
+    .subscribe-form {
+      flex-wrap: wrap;
+      padding-top: 15px;
+      .subscribe-field {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+      .btn-std {
+        width: 100%;
+        font-size: 12px;
+        height: 40px;
+      }
+    }
+  }
+  footer {
+    .fot-cont {
+      display: none;
+    }
+    .bot-menu-wrap {
+      flex-wrap: wrap;
+      .categories {
+        column-count: 1;
+      }
+    }
+    .bot-menu {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
