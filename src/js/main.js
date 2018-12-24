@@ -128,7 +128,11 @@ $(document).ready(function(){
         }
     );
 
-
+    $('.js-bot-link').on('click', function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('open');
+        $(this).parent().find('.foot-list').slideToggle(150);
+    });
 
 
 });

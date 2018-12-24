@@ -87,6 +87,13 @@ footer {
   .social-wrap {
     text-align: right;
   }
+  .open {
+    & > .mobile-link {
+      &:after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
   .social {
     a {
       font-size: 18px;
