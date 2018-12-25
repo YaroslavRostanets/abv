@@ -32,7 +32,13 @@
         }
       }
       .i-block {
-        width: inherit;
+        max-width: 510px;
+        //max-width: none;
+      }
+      .recomm {
+        .rec-item {
+          max-width: 315px;
+        }
       }
     }
     .gray-bg {
@@ -159,6 +165,14 @@
         width: 100%;
         font-size: 12px;
         height: 40px;
+      }
+    }
+  }
+  header {
+    .mobile-menu {
+      .cont {
+        padding-left: 0;
+        padding-right: 0;
       }
     }
   }
