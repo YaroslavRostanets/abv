@@ -87,6 +87,9 @@ footer {
   .social-wrap {
     text-align: right;
   }
+  .mobile-link {
+    display: none;
+  }
   .open {
     & > .mobile-link {
       &:after {

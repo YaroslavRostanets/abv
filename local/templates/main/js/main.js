@@ -76,7 +76,9 @@ $(document).ready(function(){
             prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
             nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>'
         });
-        $('.js-i-block-wrap').slick('slickGoTo', 0);
+        setTimeout(function(){
+            $('.js-i-block-wrap').slick('slickGoTo', 0);
+        }, 50);
 
         $('.js-brands-left').slick({
             dots: false,
@@ -134,5 +136,30 @@ $(document).ready(function(){
         $(this).parent().find('.foot-list').slideToggle(150);
     });
 
+    $('.js-category-link').on('click', function(e){
+        e.preventDefault();
+        var item = $(this).closest('li');
+        if (item.hasClass('open')){
+            item.find('.category-list').slideUp(150);
+            item.removeClass('open');
+        } else {
+            item.find('.category-list').slideDown(150);
+            item.addClass('open');
+        }
+    });
+
+    $('.js-toggle-catalog').on('click', function (e) {
+        e.preventDefault();
+        $(this).addClass('open');
+        $(this).closest('.catalog-link-wrap').find('.catalog-list').fadeIn(150)
+    });
+
+    $(document).mouseup(function (e) {
+        var container = $(".catalog-list");
+        if (container.has(e.target).length === 0){
+            container.hide();
+            $('.js-toggle-catalog').removeClass('open');
+        }
+    });
 
 });

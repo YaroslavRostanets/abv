@@ -1,3 +1,8 @@
+@media (min-width: 576px) {
+  .foot-list {
+    display: block !important;
+  }
+}
 @media (max-width: 576px) {
   .cont {
     width: 100%;
@@ -27,7 +32,7 @@
         }
       }
       .i-block {
-        width: 293px !important;
+        width: inherit;
       }
     }
     .gray-bg {
@@ -206,6 +211,9 @@
       width: 100%;
     }
     .bot-menu-cont {
+      width: 100%;
+    }
+    .categories {
       width: 100%;
     }
     .mobile-link {
