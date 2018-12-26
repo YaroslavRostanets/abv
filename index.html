@@ -1070,6 +1070,99 @@
         </div>
     </footer>
 
+    <!-- Авторизация модалка -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#sign-in-tab" role="tab" aria-selected="true">
+                                Вход в кабинет
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#sign-up-tab" role="tab" aria-selected="false">
+                                Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="sign-in-tab" role="tabpanel">
+
+                            <!-- Авторизация -->
+                            <ul class="nav nav-pills" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#user-tab" role="tab" aria-selected="true">
+                                        Покупатель
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#partner-tab" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                        Партнер
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="user-tab" role="tabpanel">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Пароль">
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-std" type="submit">Войти</button>
+                                            <a class="btn btn-light" href="#" role="button">Забыли пароль</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="partner-tab" role="tabpanel">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Пароль">
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-std" type="submit">Войти</button>
+                                            <a class="btn btn-light" href="#" role="button">Забыли пароль</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!----------------->
+
+                        </div>
+                        <div class="tab-pane fade" id="sign-up-tab" role="tabpanel">
+
+                            <!-- Регистрация -->
+
+                            <!----------------->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- конец Авторизация модалка -->
+
     <script src="local/templates/main/libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="local/templates/main/libs/slick/slick.min.js"></script>
     <script src="local/templates/main/js/main.js"></script>

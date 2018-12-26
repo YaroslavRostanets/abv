@@ -272,3 +272,29 @@ input[type="password"] {
     color: #333333;
   }
 }
+.nav-pills {
+  border: 1px solid #FD8E00;
+  display: inline-flex;
+  border-radius: 4px;
+  .nav-item {
+    padding-left: 0;
+    border-right: 1px solid #FD8E00;
+    &:last-child {
+      border-radius: 0;
+    }
+    &:before {
+      display: none;
+    }
+  }
+  .nav-link {
+    text-decoration: none;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #333333;
+    border-radius: 0;
+    &.active {
+      background: #FFF6EB;
+      color: #333333;
+    }
+  }
+}
