@@ -218,4 +218,27 @@
       }
     }
   }
+  .brands-page {
+    & > .cont {
+      padding-top: 14px;
+      padding-bottom: 70px;
+    }
+    .breadcrumb {
+      margin-bottom: 8px;
+    }
+    .after-title {
+      margin-bottom: 30px;
+    }
+    .brands-wrap {
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+    .one-brand {
+      width: 181px;
+      height: 177px;
+      img {
+        width: 114px;
+      }
+    }
+  }
 }

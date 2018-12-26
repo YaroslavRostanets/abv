@@ -1,0 +1,56 @@
+.brands-page {
+  & > .cont {
+    padding-top: 25px;
+    padding-bottom: 60px;
+  }
+  .breadcrumb {
+    margin-bottom: 16px;
+  }
+  .after-title {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 18px;
+  }
+  h1 {
+    margin-bottom: 15px;
+  }
+  .brands-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 21px;
+  }
+  .one-brand {
+    width: 184px;
+    height: 184px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E8E8E8;
+    margin: 0 10px 20px 10px;
+    border-radius: 4px;
+    transition: all 0.1s ease-out;
+    &:hover {
+      border: 1px solid #FDDDAA;
+      img {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    }
+    img {
+      display: block;
+      width: 122px;
+      margin-left: auto;
+      margin-right: auto;
+      filter: grayscale(100%);
+      opacity: 0.8;
+      transition: all 0.1s ease-out;
+    }
+  }
+  .brands-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #707070;
+  }
+}
