@@ -232,4 +232,26 @@ $(document).ready(function(){
         $('.mobile-menu').fadeToggle(150);
     });
 
+    /*--Детальная --*/
+
+    $('.js-prod-slider').slick({
+        slidesToShow: 1,
+        asNavFor: '.js-prod-slider-nav',
+        prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
+        nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>'
+    });
+
+    $('.js-prod-slider-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.js-prod-slider',
+        dots: false,
+        arrows: false,
+        centerMode: false,
+        focusOnSelect: true,
+        variableWidth: true,
+        prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
+        nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>'
+    });
+
 });
