@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="local/templates/main/libs/bootstrap/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/slick/slick.css">
+    <link rel="stylesheet" href="local/templates/main/libs/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="local/templates/main/libs/formstyler/jquery.formstyler.css">
     <link rel="stylesheet" href="local/templates/main/font/stylesheet.css">
     <link rel="stylesheet" href="local/templates/main/font/abv-font/css/fontello.css">
     <link rel="stylesheet" href="local/templates/main/css/main.min.css">
@@ -47,7 +49,7 @@
                     <a href="#" class="btn btn-light">
                         B2B
                     </a>
-                    <a href="#" class="btn btn-light btn-profile">
+                    <a href="#" class="btn btn-light btn-profile" data-toggle="modal" data-target="#sign-in">
                         <i class="demo-icon icon-user"></i>
                     </a>
                 </div>
@@ -298,7 +300,7 @@
 
                                 <div class="btns-cont">
                                     <a href="#" class="btn btn-light">B2B</a>
-                                    <a href="#" class="btn btn-std">Войти</a>
+                                    <a href="#" class="btn btn-std" data-toggle="modal" data-target="#sign-in">Войти</a>
                                 </div>
                             </div>
                             <div class="menu-second-level"></div>
@@ -1103,7 +1105,7 @@
                         <div class="tab-pane fade show active" id="sign-in-tab" role="tabpanel">
 
                             <!-- Авторизация -->
-                            <ul class="nav nav-pills" role="tablist">
+                            <ul class="nav nav-pills nav-gray" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="pill" href="#user-tab" role="tab" aria-selected="true">
                                         Покупатель
@@ -1115,7 +1117,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-content tab-content-in">
                                 <div class="tab-pane fade show active" id="user-tab" role="tabpanel">
                                     <form>
                                         <div class="form-group">
@@ -1124,11 +1126,20 @@
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Пароль">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="btns-row">
                                             <button class="btn btn-std" type="submit">Войти</button>
                                             <a class="btn btn-light" href="#" role="button">Забыли пароль</a>
                                         </div>
                                     </form>
+                                    <div class="bottom-group">
+                                        <div class="label">
+                                            Войти через
+                                        </div>
+                                        <div class="btns-row">
+                                            <a href="#" class="btn fb-button">Facebook</a>
+                                            <a href="#" class="btn google-button">Google</a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="partner-tab" role="tabpanel">
                                     <form>
@@ -1138,7 +1149,7 @@
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Пароль">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="btns-row">
                                             <button class="btn btn-std" type="submit">Войти</button>
                                             <a class="btn btn-light" href="#" role="button">Забыли пароль</a>
                                         </div>
@@ -1151,7 +1162,115 @@
                         <div class="tab-pane fade" id="sign-up-tab" role="tabpanel">
 
                             <!-- Регистрация -->
-
+                            <ul class="nav nav-pills nav-gray" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#user-reg-tab" role="tab" aria-selected="true">
+                                        Покупатель
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#partner-reg-tab" role="tab">
+                                        Партнер
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content tab-content-in registration-tab">
+                                <div class="tab-pane fade show active" id="user-reg-tab" role="tabpanel">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Имя *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Фамилия *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Номер телефона *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="E-mail *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Город *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Пароль *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Подтверждение пароля *">
+                                        </div>
+                                        <button class="btn btn-std">
+                                            Регистрация
+                                        </button>
+                                    </form>
+                                    <div class="bottom-group">
+                                        <div class="label">
+                                            Регистрация через
+                                        </div>
+                                        <div class="btns-row">
+                                            <a href="#" class="btn fb-button">Facebook</a>
+                                            <a href="#" class="btn google-button">Google</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="partner-reg-tab" role="tabpanel">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Имя *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Фамилия *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Номер телефона *">
+                                        </div>
+                                        <div class="form-group checkbox-form-group">
+                                            <input type="checkbox" data-styler id="whatsapp-check">
+                                            <label class="form-check-label" for="whatsapp-check">WhatsApp</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Номер телефона WhatsApp *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Второй номер телефона *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="E-mail *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Город *">
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" >
+                                                <option>Физическле лицо</option>
+                                                <option>Юр. лицо</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Название компании *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Должность *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="VEON">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Пароль *">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Подтверждение пароля *">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="date-picker-wrap">
+                                                <input type="text" class="form-control datepicker" placeholder="Дата рождения">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-std">
+                                            Регистрация
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
                             <!----------------->
 
                         </div>
@@ -1165,6 +1284,16 @@
 
     <script src="local/templates/main/libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="local/templates/main/libs/slick/slick.min.js"></script>
+    <script src="local/templates/main/libs/formstyler/jquery.formstyler.min.js"></script>
+    <script src="local/templates/main/libs/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="local/templates/main/libs/bootstrap-datepicker/bootstrap-datepicker.ru.min.js"></script>
     <script src="local/templates/main/js/main.js"></script>
+
+    <script>
+        $('.datepicker').datepicker({
+            language: 'ru'
+        });
+    </script>
+
 </body>
 </html>

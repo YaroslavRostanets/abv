@@ -118,6 +118,8 @@ $(document).ready(function(){
 
     /*--Главная--*/
 
+    $('[data-styler]').styler();
+
     $('.js-rec-slider').slick({
             dots: false,
             infinite: true,

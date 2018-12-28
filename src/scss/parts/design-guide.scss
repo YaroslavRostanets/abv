@@ -101,12 +101,24 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
   font-family: 'Proxima Nova Regular';
+  border-radius: 4px;
   &::placeholder {
     color: #909090;
   }
   &:focus {
     outline: none;
+    box-shadow: none;
+    border-color: transparent;
   }
+}
+.form-control {
+  border: 1px solid #F0F0F0;
+  &:focus {
+    border: 1px solid #F0F0F0;
+  }
+}
+select {
+  color: #909090;
 }
 .check-group {
   list-style: none;
@@ -280,7 +292,7 @@ input[type="password"] {
     padding-left: 0;
     border-right: 1px solid #FD8E00;
     &:last-child {
-      border-radius: 0;
+      border-right: 0;
     }
     &:before {
       display: none;
@@ -292,9 +304,50 @@ input[type="password"] {
     font-size: 14px;
     color: #333333;
     border-radius: 0;
+    text-align: center;
     &.active {
       background: #FFF6EB;
       color: #333333;
+    }
+  }
+}
+.nav-gray {
+  border: 1px solid #E9E9E9;
+  .nav-item {
+    border-right: 1px solid #E9E9E9;
+  }
+  .nav-link {
+    &.active {
+      background: #F5F5F5;
+    }
+  }
+}
+.jq-checkbox {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  position: relative;
+  input[type="checkbox"] {
+    display: none;
+  }
+  &.checked {
+    .jq-checkbox__div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      &:before {
+        content: "\e808";
+        position: absolute;
+        font-size: 6px;
+        color: #FCA114;
+        font-family: "fontello";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
     }
   }
 }
