@@ -150,25 +150,23 @@ $(document).ready(function(){
     $('.js-category-link').on('click', function(e){
         e.preventDefault();
         var item = $(this).closest('li');
-        if (item.hasClass('open')){
-            item.find('.category-list').slideUp(150);
-            item.removeClass('open');
-        } else {
-            item.find('.category-list').slideDown(150);
-            item.addClass('open');
-        }
+        item.siblings().find('.category-list').slideUp(150);
+        item.siblings().removeClass('open');
+        item.find('.category-list').slideDown(150);
+        item.addClass('open');
+
     });
 
     $('.js-toggle-catalog').on('click', function (e) {
         e.preventDefault();
-        $(this).addClass('open');
-        $(this).closest('.catalog-link-wrap').find('.catalog-list').fadeIn(150)
+        $(this).toggleClass('open');
+        $(this).closest('.catalog-link-wrap').find('.catalog-list').fadeToggle(150);
     });
 
     $(document).mouseup(function (e) {
-        var container = $(".catalog-list");
+        var container = $(".catalog-link-wrap");
         if (container.has(e.target).length === 0){
-            container.hide();
+            container.find('.catalog-list').hide();
             $('.js-toggle-catalog').removeClass('open');
         }
     });

@@ -170,6 +170,7 @@ header {
       box-shadow: 0px 3px 20px 0px rgba(150,98,66,0.15);
       visibility: hidden;
       transition: opacity 0.2s ease;
+      text-align: center;
       &:before {
         content: '';
         position: absolute;
