@@ -299,4 +299,49 @@
       margin-bottom: 18px;
     }
   }
+  .product-page {
+    .breadcrumb {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .mobile-prod-name {
+      display: block;
+      text-align: center;
+      margin-bottom: 17px;
+    }
+    .mobile-availability {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      color: #707070;
+      margin-bottom: 35px;
+      .in-stock {
+        color: #559F27;
+      }
+    }
+    .prod-slider-nav {
+      display: none;
+    }
+    .prod-slider {
+      .one-prod {
+        height: 165px;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+    .price-buy {
+      display: none;
+    }
+    .count-form-group {
+      display: none;
+    }
+    .add-to-confirm {
+      display: none;
+    }
+    .mobile-block {
+      display: block;
+    }
+  }
 }

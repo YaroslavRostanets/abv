@@ -254,4 +254,47 @@ $(document).ready(function(){
         nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>'
     });
 
+    $('.product-page a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+        console.log('show');
+        destroySlick('.js-accessories');
+        $('.js-accessories').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
+            nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>',
+            responsive: [
+                {
+                    breakpoint: 1240,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        });
+        e.target
+        e.relatedTarget
+    });
+
+    $('video').parent().click(function () {
+        if($(this).children("video").get(0).paused){
+            $(this).children("video").get(0).play();
+            $(this).children(".playpause").fadeOut();
+        }else{
+            $(this).children("video").get(0).pause();
+            $(this).children(".playpause").fadeIn();
+        }
+    });
+
 });

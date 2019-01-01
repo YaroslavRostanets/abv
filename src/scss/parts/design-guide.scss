@@ -290,9 +290,16 @@ select {
   border-radius: 4px;
   .nav-item {
     padding-left: 0;
-    border-right: 1px solid #FD8E00;
     &:last-child {
       border-right: 0;
+      .nav-link {
+        border-right: 1px solid transparent !important;
+      }
+    }
+    &:first-child {
+      .nav-link {
+        border-left: 1px solid transparent !important;
+      }
     }
     &:before {
       display: none;
@@ -305,9 +312,13 @@ select {
     color: #333333;
     border-radius: 0;
     text-align: center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     &.active {
       background: #FFF6EB;
       color: #333333;
+      border-right: 1px solid #FD8E00;
+      border-left: 1px solid #FD8E00;
     }
   }
 }
@@ -372,6 +383,73 @@ select {
     }
     &:nth-child(even){
       background: #FCFCFC;
+    }
+  }
+}
+.video-wrap {
+  position: relative;
+  video {
+    width: 100%;
+  }
+  .playpause {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../img/icons/play-button.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.jq-number {
+  border: 1px solid #E8E8E8;
+  height: 36px;
+  width: 75px;
+  position: relative;
+  border-radius: 4px;
+  .jq-number__field {
+    height: 100%;
+  }
+  input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 23px;
+    text-align: center;
+  }
+}
+.jq-number__spin {
+  width: 24px;
+  height: 50%;
+  border-left: 1px solid #E8E8E8;
+  position: absolute;
+  &.minus {
+    right: 0;
+    bottom: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 6px;
+      top: 4px;
+      border: 5px solid transparent;
+      border-top: 6px solid #909090;
+    }
+  }
+  &.plus {
+    top: 0;
+    right: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 6px;
+      top: 5px;
+      border: 5px solid transparent;
+      border-bottom: 6px solid #909090;
     }
   }
 }
