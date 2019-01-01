@@ -39,6 +39,11 @@
       .basket-link {
         font-size: 29px;
       }
+      .mini-basket {
+        .tooltip {
+          display: none !important;
+        }
+      }
     }
   }
   .home-page {
@@ -216,6 +221,7 @@
   }
   .product-page {
     padding-top: 0;
+    overflow-x: hidden;
     .prod-info {
       flex-wrap: wrap;
     }

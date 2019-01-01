@@ -99,6 +99,11 @@ $(document).ready(function(){
             nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>'
         });
 
+        if( $(window).width() < 576 ) {
+            $('.nav-link[href="#accessories-tab"]').click();
+
+        }
+
     }
 
     function runTablet(){
@@ -280,6 +285,12 @@ $(document).ready(function(){
                     settings: {
                         slidesToShow: 2
                     }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
                 }
             ]
         });
@@ -295,6 +306,12 @@ $(document).ready(function(){
             $(this).children("video").get(0).pause();
             $(this).children(".playpause").fadeIn();
         }
+    });
+
+    $('.js-char-toggle').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('open');
+        $('#characteristic-tab').slideToggle();
     });
 
 });

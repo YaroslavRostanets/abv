@@ -342,6 +342,141 @@
     }
     .mobile-block {
       display: block;
+      margin-bottom: 40px;
+      .add-to-confirm {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+    .price-count {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 23px;
+    }
+    .price-wrap {
+      .label {
+        font-size: 12px;
+        color: #707070;
+        margin-bottom: 4px;
+      }
+      .price {
+        font-size: 22px;
+        color: #333333;
+      }
+    }
+    .btn-std {
+      max-width: 290px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: 25px;
+    }
+    .prod-img-cont {
+      margin-bottom: 0;
+    }
+    .prod-right-cont {
+      padding-top: 0;
+    }
+    .prod-slider {
+      margin-bottom: 20px;
+    }
+    .vendor-code {
+      margin-bottom: 22px;
+    }
+    .nav-pills {
+      display: none;
+    }
+    .tab-cont-in {
+      padding-top: 0;
+    }
+    .tab-content>.tab-pane {
+      display: block;
+      opacity: 1;
+    }
+    .prod-info {
+      margin-bottom: 0;
+    }
+    .js-char-toggle {
+      height: 50px;
+      background: #D6D6D6;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-decoration: none;
+      color: #333333;
+      position: relative;
+      &.open {
+        &:after {
+          top: 35%;
+          transform: rotate(180deg);
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 44%;
+        transform: rotate(0deg);
+        border: 5px solid transparent;
+        border-top: 6px solid #909090;
+      }
+    }
+    #characteristic-tab {
+      .tab-title {
+        display: none;
+      }
+      .tab-cont-in {
+        padding-top: 40px;
+      }
+    }
+    .tab-cont-in {
+      padding-bottom: 0;
+    }
+    .tab-title {
+      font-size: 18px;
+    }
+    .description-text {
+      margin-top: 0;
+    }
+    .table {
+      td, th {
+        padding-left: 20px;
+        padding-right: 20px;
+        &:first-child {
+          text-align: left;
+        }
+      }
+    }
+    .one-accessory {
+      margin: 0;
+      text-align: center;
+      .prod-name {
+        display: block;
+        padding-right: 0;
+      }
+      .img-cont {
+        justify-content: center;
+        margin-bottom: 23px;
+      }
+      .cat-id {
+        margin-bottom: 19px;
+      }
+    }
+    .accessories-wrap {
+      margin-left: 0;
+      margin-right: 0;
+      .prev-arrow {
+        top: 20%;
+      }
+      .next-arrow {
+        top: 20%;
+      }
     }
   }
 }

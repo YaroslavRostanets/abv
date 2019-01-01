@@ -388,8 +388,11 @@ select {
 }
 .video-wrap {
   position: relative;
+  border-radius: 3px;
+  overflow: hidden;
   video {
     width: 100%;
+    display: block;
   }
   .playpause {
     position: absolute;
@@ -418,7 +421,7 @@ select {
     border: none;
     height: 100%;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 23px;
     text-align: center;
   }
