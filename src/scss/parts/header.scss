@@ -21,20 +21,6 @@ header {
       .label {
         margin-right: 7px;
       }
-      .dropdown-link {
-        position: relative;
-        padding-right: 15px;
-        display: inline-block;
-        text-decoration: underline;
-        &:after {
-          content: "";
-          position: absolute;
-          right: 0;
-          top: 8px;
-          border: 5px solid transparent;
-          border-top: 6px solid #909090;
-        }
-      }
     }
     .center-part {
       display: flex;

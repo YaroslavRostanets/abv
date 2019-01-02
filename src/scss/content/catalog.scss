@@ -1,17 +1,20 @@
 .catalog-page {
   & > .cont {
     display: flex;
+    padding-top: 17px;
   }
   .aside {
     width: 290px;
   }
   .content-part {
     width: calc( 100% - 290px );
+    padding-left: 15px;
   }
   .filter-cat-list {
     list-style: none;
+    margin-bottom: 40px;
     & > li {
-      border-bottom: 1px solid #FFFFFF;
+      border-bottom: 1px solid #F5F3F0;
       &.open {
         .category-list {
           display: block;
@@ -42,6 +45,7 @@
   }
   .category-list {
     display: none;
+    padding-bottom: 15px;
     & > li {
       & > a {
         height: 34px;
@@ -50,6 +54,11 @@
         color: #257BA8;
         font-size: 14px;
         padding-left: 30px;
+        transition: all 0.1s ease-out;
+        &:hover {
+          background: #FAFAFA;
+          color: #EF8600;
+        }
       }
     }
   }
@@ -75,6 +84,7 @@
   .filter-prices {
     display: flex;
     margin-top: 23px;
+    margin-bottom: 47px;
     .group {
       display: flex;
       align-items: center;
@@ -93,13 +103,20 @@
       width: 75px;
       display: block;
       border: none;
-      background: #D6D6D6;
+      background: #FAFAFA;
       padding: 4px 15px;
       text-align: right;
       color: #707070;
       font-size: 14px;
       border-radius: 4px;
     }
+  }
+  .min-max {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #707070;
+    margin-top: 16px;
   }
   .filter-list {
     .jq-checkbox {
@@ -118,6 +135,85 @@
     label {
       display: flex;
       align-items: center;
+      cursor: pointer;
+    }
+  }
+  .filter-block {
+    margin-bottom: 32px;
+  }
+  .price-filter-block {
+    width: 233px;
+  }
+  .reset-filters {
+    white-space: nowrap;
+    font-size: 12px;
+    color: #333333;
+  }
+  .aside {
+    padding-bottom: 50px;
+  }
+  .filter-wrap {
+    .btn-light {
+      width: 235px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+  }
+  .breadcrumb-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+    margin-bottom: 15px;
+  }
+  .back {
+    font-size: 12px;
+    color: #333333;
+  }
+  .category-descr {
+    .text {
+      font-size: 14px;
+      color: #707070;
+      line-height: 22px;
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .page-title {
+    margin-bottom: 29px;
+  }
+  .top-ctrl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    min-height: 50px;
+    .label {
+      margin-right: 10px;
+    }
+    .sort {
+      display: flex;
+    }
+    .show-on-page {
+      display: flex;
+    }
+    b {
+      font-family: 'Proxima Nova Bold';
+    }
+    .dropdown-link {
+      text-decoration: none;
+      color: #707070;
+    }
+    .dropdown-item {
+      text-decoration: none;
     }
   }
 }

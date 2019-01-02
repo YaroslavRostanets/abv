@@ -703,7 +703,7 @@
                     <h4 class="filter-title">
                         Цена
                     </h4>
-                    <div class="filter-cont">
+                    <div class="filter-cont price-filter-block">
                         <div class="filter-prices">
                             <div class="group">
                                 <div class="label">От</div>
@@ -715,17 +715,35 @@
                             </div>
                         </div>
                         <div id="price-slider"></div>
+                        <div class="min-max">
+                            <span class="min">
+                                10
+                            </span>
+                            <span class="max">
+                                1000
+                            </span>
+                        </div>
                     </div>
 
                     <script>
                         var slider = document.getElementById('price-slider');
 
                         noUiSlider.create(slider, {
-                            start: [20, 80],
+                            start: [50, 700],
                             connect: true,
+                            tooltips: true,
+                            step: 1,
                             range: {
-                                'min': 0,
-                                'max': 100
+                                'min': 10,
+                                'max': 1000
+                            },
+                            format: {
+                                to: function (value) {
+                                    return Math.round(value);
+                                },
+                                from: function (value) {
+                                    return Math.round(value);
+                                }
                             }
                         });
                     </script>
@@ -756,6 +774,94 @@
                     </ul>
                 </div>
 
+                <div class="filter-block">
+                    <h4 class="filter-title">
+                        Форм фактор
+                    </h4>
+                    <ul class="filter-list">
+                        <li>
+                            <label>
+                                <input data-styler type="checkbox">
+                                <span>
+                                    10х10
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-block">
+                    <h4 class="filter-title">
+                        Емкость
+                    </h4>
+                    <ul class="filter-list">
+                        <li>
+                            <label>
+                                <input data-styler type="checkbox">
+                                <span>
+                                    10 тб
+                                </span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input data-styler type="checkbox">
+                                <span>
+                                    20 тб
+                                </span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input data-styler type="checkbox">
+                                <span>
+                                    30 тб
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-block">
+                    <h4 class="filter-title">
+                        Скорость вращения
+                    </h4>
+                    <ul class="filter-list">
+                        <li>
+                            <label>
+                                <input data-styler type="checkbox">
+                                <span>
+                                    1200 об/с
+                                </span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input data-styler type="checkbox">
+                                <span>
+                                    3200 об/с
+                                </span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input data-styler type="checkbox">
+                                <span>
+                                    5400 об/с
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#" class="btn btn-light">
+                    Показать все фильтры
+                </a>
+
+                <a href="#" class="reset-filters">
+                    Сбросить все фильтры
+                </a>
+
             </div>
         </div>
         <div class="content-part">
@@ -774,17 +880,100 @@
                         <li class="breadcrumb-item">
                             <a href="#">Видеонаблюдение</a>
                         </li>
-                        <li class="breadcrumb-item">
-                            <a href="#">Видеокамеры</a>
-                        </li>
                         <li class="breadcrumb-item active">
-                            LTV-CCH-400, видеокамера
+                            Видеокамеры
                         </li>
                     </ol>
                 </nav>
                 <a href="#" class="back">
                     Вернуться к выбору категорий
                 </a>
+            </div>
+            <div class="category-descr">
+                <h1 class="page-title">
+                    Видеокамеры
+                </h1>
+                <div class="text">
+                    <p>
+                        В зависимости от предполагаемого места монтажа стоит выбирать
+                        модели с уличным или внутренним исполнением. У уличных камер
+                        предусмотрена защита от негативных климатических воздействий.
+                        Камеры, предназначенные для установки в помещениях, могут выглядеть
+                        более эстетично, чтобы вписаться в интерьер.
+                    </p>
+                    <p>
+                        Мы являемся официальным дистрибьютором ведущих производителей,
+                        а также собственных торговых марок. Предлагаем купить камеры
+                        видеонаблюдения в Москве в компании ЛУИС+. Описание оборудования
+                        содержит характеристики, сертификаты, инструкции, паспорта, фотографии,
+                        аксессуары. Мы организуем поставки оборудования по всей России.
+                    </p>
+                </div>
+            </div>
+            <div class="products-container">
+                <div class="top-ctrl">
+
+                    <div class="found">
+                        Найдено
+                        <b>25 позиций</b>
+                    </div>
+
+                    <div class="sort">
+                        <div class="label">Сортировать по: </div>
+                        <div class="dropdown">
+                            <a class="dropdown-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Популярности
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Цене по возростанию</a>
+                                <a class="dropdown-item" href="#">Цене по убыванию</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="show-on-page">
+                        <div class="label">Показывать на странице: </div>
+                        <div class="dropdown">
+                            <a class="dropdown-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                10 товаров
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">20 товаров</a>
+                                <a class="dropdown-item" href="#">30 товаров</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products-list">
+                    <div class="one-product">
+                        <a href="#" class="img-cont">
+                            <img src="local/templates/main/img/content/prod.jpg" alt="">
+                        </a>
+                        <div class="product-descr">
+                            <div class="left-part">
+                                <div class="availability">
+                                    Наличие:
+                                    <span class="in-stock">Много</span>
+                                </div>
+                                <a href="#" class="prod-name">
+                                    LTV-CCH-400, видеокамера
+                                </a>
+                                <div class="cat-num">
+                                    Номер в каталоге: 125565
+                                </div>
+                                <div class="vendor-code">
+                                    Артикул поставщика: LTV-CCH-400
+                                </div>
+                            </div>
+                            <div class="right-part">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
