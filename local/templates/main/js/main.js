@@ -314,4 +314,15 @@ $(document).ready(function(){
         $('#characteristic-tab').slideToggle();
     });
 
+    /*-- Каталог --*/
+
+    $('.js-toggle-category').on('click', function (e) {
+        e.preventDefault();
+        var parent = $(this).closest('li');
+        parent.siblings().removeClass('open');
+        parent.siblings().find('.cat-list-cont').slideUp(150);
+        parent.toggleClass('open');
+        parent.find('.cat-list-cont').slideToggle(150);
+    });
+
 });

@@ -1,0 +1,123 @@
+.catalog-page {
+  & > .cont {
+    display: flex;
+  }
+  .aside {
+    width: 290px;
+  }
+  .content-part {
+    width: calc( 100% - 290px );
+  }
+  .filter-cat-list {
+    list-style: none;
+    & > li {
+      border-bottom: 1px solid #FFFFFF;
+      &.open {
+        .category-list {
+          display: block;
+        }
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      & > a {
+        font-size: 16px;
+        color: #333333;
+        font-family: 'Proxima Nova Bold';
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        height: 50px;
+      }
+      .ico {
+        margin-right: 10px;
+      }
+    }
+    li {
+      padding-left: 0;
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .category-list {
+    display: none;
+    & > li {
+      & > a {
+        height: 34px;
+        display: flex;
+        align-items: center;
+        color: #257BA8;
+        font-size: 14px;
+        padding-left: 30px;
+      }
+    }
+  }
+  .cat-list-cont {
+    display: none;
+    li {
+
+    }
+    a {
+      color: #333333;
+      padding-left: 50px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .filter-title {
+    font-size: 18px;
+    color: #333333;
+    font-family: 'Proxima Nova Bold';
+    margin-bottom: 18px;
+  }
+  .filter-prices {
+    display: flex;
+    margin-top: 23px;
+    .group {
+      display: flex;
+      align-items: center;
+      margin-right: 29px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .label {
+      font-size: 14px;
+      color: #707070;
+      margin-right: 10px;
+    }
+    input[type="text"] {
+      height: 40px;
+      width: 75px;
+      display: block;
+      border: none;
+      background: #D6D6D6;
+      padding: 4px 15px;
+      text-align: right;
+      color: #707070;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+  }
+  .filter-list {
+    .jq-checkbox {
+      margin-right: 13px;
+    }
+    li {
+      padding-left: 0;
+      margin-bottom: 14px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:before {
+        display: none;
+      }
+    }
+    label {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

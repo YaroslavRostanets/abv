@@ -456,3 +456,13 @@ select {
     }
   }
 }
+body {
+  .noUi-horizontal {
+    height: 5px;
+    box-shadow: none;
+    border: 1px solid #E8E8E8;
+  }
+  .noUi-connect {
+    background: transparent;
+  }
+}
