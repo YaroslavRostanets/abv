@@ -535,11 +535,114 @@ body {
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: change_color();
+    justify-content: center;
     img {
       display: block;
       max-width: 150px;
       max-height: 150px;
     }
+  }
+  .product-descr {
+    display: flex;
+    justify-content: space-between;
+    width: calc( 100% - 200px );
+    padding-top: 24px;
+    padding-left: 5px;
+    padding-bottom: 22px;
+  }
+  .availability{
+    font-size: 12px;
+    margin-bottom: 10px;
+    .in-stock {
+      color: #559F27;
+    }
+  }
+  .prod-name {
+    font-size: 18px;
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Proxima Nova Bold';
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  .cat-num {
+    font-size: 14px;
+    color: #707070;
+    margin-bottom: 12px;
+    span {
+      color: #333333;
+    }
+  }
+  .vendor-code {
+    font-size: 14px;
+    color: #707070;
+    span {
+      color: #333333;
+    }
+  }
+  .left-part {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+  }
+  .right-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .add-to-confirm {
+    font-size: 12px;
+    color: #333333;
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+    &.added {
+      &:before {
+        filter: grayscale(0%);
+      }
+    }
+    &:before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+      background-image: url('../img/icons/com.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      filter: grayscale(100%);
+    }
+  }
+  .price-wrap {
+    .label {
+      color: #707070;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .price {
+      font-size: 22px;
+    }
+  }
+  .bot-ctrl-stripe {
+    display: flex;
+    .btn-std {
+      margin-left: 13px;
+    }
+    .jq-number {
+      margin-left: 13px;
+    }
+  }
+  .add-to-wish {
+    width: 38px;
+    height: 38px;
+    background: #FAFAFA;
+    border-radius: 3px;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #707070;
   }
 }
