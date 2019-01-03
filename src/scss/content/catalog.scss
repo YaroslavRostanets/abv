@@ -2,6 +2,7 @@
   & > .cont {
     display: flex;
     padding-top: 17px;
+    padding-bottom: 50px;
   }
   .aside {
     width: 290px;
@@ -176,6 +177,9 @@
     color: #333333;
   }
   .category-descr {
+    .h1 {
+      margin-bottom: 27px;
+    }
     .text {
       font-size: 14px;
       color: #707070;
@@ -215,5 +219,23 @@
     .dropdown-item {
       text-decoration: none;
     }
+  }
+  .go-to-basket {
+    font-size: 12px;
+    color: #333333;
+    display: inline-flex;
+    margin-left: auto;
+    margin-top: 33px;
+  }
+  .navigation {
+    .text-right {
+      margin-top: 33px;
+      margin-bottom: 18px;
+    }
+  }
+  .h1 {
+    font-size: 22px;
+    color: #333333;
+    font-family: 'Proxima Nova Bold';
   }
 }

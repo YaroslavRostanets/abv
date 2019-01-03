@@ -707,11 +707,11 @@
                         <div class="filter-prices">
                             <div class="group">
                                 <div class="label">От</div>
-                                <input type="text" value="10">
+                                <input type="text" class="js-min-value" value="10">
                             </div>
                             <div class="group">
                                 <div class="label">до</div>
-                                <input type="text" value="1000">
+                                <input type="text" class="js-max-value" value="1000">
                             </div>
                         </div>
                         <div id="price-slider"></div>
@@ -746,6 +746,13 @@
                                 }
                             }
                         });
+
+                        slider.noUiSlider.on('change.one', function (values) {
+                            console.log(values);
+                            $('.js-min-value').val(values[0]);
+                            $('.js-max-value').val(values[1]);
+                        });
+
                     </script>
 
                 </div>
@@ -765,7 +772,7 @@
                         </li>
                         <li>
                             <label>
-                                <input data-styler type="checkbox">
+                                <input data-styler checked type="checkbox">
                                 <span>
                                     Напольная
                                 </span>
@@ -781,7 +788,7 @@
                     <ul class="filter-list">
                         <li>
                             <label>
-                                <input data-styler type="checkbox">
+                                <input data-styler checked type="checkbox">
                                 <span>
                                     10х10
                                 </span>
@@ -967,7 +974,7 @@
                                 <div class="vendor-code">
                                     Артикул поставщика: LTV-CCH-400
                                 </div>
-                                <a href="#" class="add-to-confirm">
+                                <a href="#" class="add-to-confirm added">
                                     Добавить в сравнение
                                 </a>
                             </div>
@@ -977,12 +984,12 @@
                                     <div class="price">9 000 AZN</div>
                                 </div>
                                 <div class="bot-ctrl-stripe">
-                                    <a href="#" class="add-to-wish">
-                                        <i class="demo-icon icon-star-empty"></i>
+                                    <a href="#" class="add-to-wish added">
+                                        <i class="demo-icon icon-star"></i>
                                     </a>
-                                    <input data-styler value="1" step="1" min="1" type="number">
-                                    <a href="#" class="btn btn-std">
-                                        Заказать
+                                    <input data-styler disabled value="1" step="1" min="1" type="number">
+                                    <a href="#" class="btn btn-black">
+                                        В корзине
                                     </a>
                                 </div>
                             </div>
@@ -991,7 +998,7 @@
 
                     <div class="one-product">
                         <a href="#" class="img-cont">
-                            <img src="local/templates/main/img/content/prod.jpg" alt="">
+                            <img src="local/templates/main/img/content/prod3.jpg" alt="">
                         </a>
                         <div class="product-descr">
                             <div class="left-part">
@@ -1030,6 +1037,305 @@
                         </div>
                     </div>
 
+                    <div class="one-product">
+                        <a href="#" class="img-cont">
+                            <img src="local/templates/main/img/content/prod4.jpg" alt="">
+                        </a>
+                        <div class="product-descr">
+                            <div class="left-part">
+                                <div class="availability">
+                                    Наличие:
+                                    <span class="in-stock">Много</span>
+                                </div>
+                                <a href="#" class="prod-name">
+                                    LTV-CCH-400, видеокамера
+                                </a>
+                                <div class="cat-num">
+                                    Номер в каталоге: <span>125565</span>
+                                </div>
+                                <div class="vendor-code">
+                                    Артикул поставщика: LTV-CCH-400
+                                </div>
+                                <a href="#" class="add-to-confirm">
+                                    Добавить в сравнение
+                                </a>
+                            </div>
+                            <div class="right-part">
+                                <div class="price-wrap">
+                                    <div class="label">Розничная цена</div>
+                                    <div class="price">9 000 AZN</div>
+                                </div>
+                                <div class="bot-ctrl-stripe">
+                                    <a href="#" class="add-to-wish">
+                                        <i class="demo-icon icon-star-empty"></i>
+                                    </a>
+                                    <input data-styler value="1" step="1" min="1" type="number">
+                                    <a href="#" class="btn btn-std">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one-product">
+                        <a href="#" class="img-cont">
+                            <img src="local/templates/main/img/content/prod5.jpg" alt="">
+                        </a>
+                        <div class="product-descr">
+                            <div class="left-part">
+                                <div class="availability">
+                                    Наличие:
+                                    <span class="in-stock">Много</span>
+                                </div>
+                                <a href="#" class="prod-name">
+                                    LTV-CCH-400, видеокамера
+                                </a>
+                                <div class="cat-num">
+                                    Номер в каталоге: <span>125565</span>
+                                </div>
+                                <div class="vendor-code">
+                                    Артикул поставщика: LTV-CCH-400
+                                </div>
+                                <a href="#" class="add-to-confirm">
+                                    Добавить в сравнение
+                                </a>
+                            </div>
+                            <div class="right-part">
+                                <div class="price-wrap">
+                                    <div class="label">Розничная цена</div>
+                                    <div class="price">9 000 AZN</div>
+                                </div>
+                                <div class="bot-ctrl-stripe">
+                                    <a href="#" class="add-to-wish">
+                                        <i class="demo-icon icon-star-empty"></i>
+                                    </a>
+                                    <input data-styler value="1" step="1" min="1" type="number">
+                                    <a href="#" class="btn btn-std">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one-product">
+                        <a href="#" class="img-cont">
+                            <img src="local/templates/main/img/content/prod6.jpg" alt="">
+                        </a>
+                        <div class="product-descr">
+                            <div class="left-part">
+                                <div class="availability">
+                                    Наличие:
+                                    <span class="in-stock">Много</span>
+                                </div>
+                                <a href="#" class="prod-name">
+                                    LTV-CCH-400, видеокамера
+                                </a>
+                                <div class="cat-num">
+                                    Номер в каталоге: <span>125565</span>
+                                </div>
+                                <div class="vendor-code">
+                                    Артикул поставщика: LTV-CCH-400
+                                </div>
+                                <a href="#" class="add-to-confirm">
+                                    Добавить в сравнение
+                                </a>
+                            </div>
+                            <div class="right-part">
+                                <div class="price-wrap">
+                                    <div class="label">Розничная цена</div>
+                                    <div class="price">9 000 AZN</div>
+                                </div>
+                                <div class="bot-ctrl-stripe">
+                                    <a href="#" class="add-to-wish">
+                                        <i class="demo-icon icon-star-empty"></i>
+                                    </a>
+                                    <input data-styler value="1" step="1" min="1" type="number">
+                                    <a href="#" class="btn btn-std">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one-product">
+                        <a href="#" class="img-cont">
+                            <img src="local/templates/main/img/content/prod7.jpg" alt="">
+                        </a>
+                        <div class="product-descr">
+                            <div class="left-part">
+                                <div class="availability">
+                                    Наличие:
+                                    <span class="in-stock">Много</span>
+                                </div>
+                                <a href="#" class="prod-name">
+                                    LTV-CCH-400, видеокамера
+                                </a>
+                                <div class="cat-num">
+                                    Номер в каталоге: <span>125565</span>
+                                </div>
+                                <div class="vendor-code">
+                                    Артикул поставщика: LTV-CCH-400
+                                </div>
+                                <a href="#" class="add-to-confirm">
+                                    Добавить в сравнение
+                                </a>
+                            </div>
+                            <div class="right-part">
+                                <div class="price-wrap">
+                                    <div class="label">Розничная цена</div>
+                                    <div class="price">9 000 AZN</div>
+                                </div>
+                                <div class="bot-ctrl-stripe">
+                                    <a href="#" class="add-to-wish">
+                                        <i class="demo-icon icon-star-empty"></i>
+                                    </a>
+                                    <input data-styler value="1" step="1" min="1" type="number">
+                                    <a href="#" class="btn btn-std">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one-product">
+                        <a href="#" class="img-cont">
+                            <img src="local/templates/main/img/content/prod8.jpg" alt="">
+                        </a>
+                        <div class="product-descr">
+                            <div class="left-part">
+                                <div class="availability">
+                                    Наличие:
+                                    <span class="in-stock">Много</span>
+                                </div>
+                                <a href="#" class="prod-name">
+                                    LTV-CCH-400, видеокамера
+                                </a>
+                                <div class="cat-num">
+                                    Номер в каталоге: <span>125565</span>
+                                </div>
+                                <div class="vendor-code">
+                                    Артикул поставщика: LTV-CCH-400
+                                </div>
+                                <a href="#" class="add-to-confirm">
+                                    Добавить в сравнение
+                                </a>
+                            </div>
+                            <div class="right-part">
+                                <div class="price-wrap">
+                                    <div class="label">Розничная цена</div>
+                                    <div class="price">9 000 AZN</div>
+                                </div>
+                                <div class="bot-ctrl-stripe">
+                                    <a href="#" class="add-to-wish">
+                                        <i class="demo-icon icon-star-empty"></i>
+                                    </a>
+                                    <input data-styler value="1" step="1" min="1" type="number">
+                                    <a href="#" class="btn btn-std">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one-product">
+                        <a href="#" class="img-cont">
+                            <img src="local/templates/main/img/content/prod9.jpg" alt="">
+                        </a>
+                        <div class="product-descr">
+                            <div class="left-part">
+                                <div class="availability">
+                                    Наличие:
+                                    <span class="in-stock">Много</span>
+                                </div>
+                                <a href="#" class="prod-name">
+                                    LTV-CCH-400, видеокамера
+                                </a>
+                                <div class="cat-num">
+                                    Номер в каталоге: <span>125565</span>
+                                </div>
+                                <div class="vendor-code">
+                                    Артикул поставщика: LTV-CCH-400
+                                </div>
+                                <a href="#" class="add-to-confirm">
+                                    Добавить в сравнение
+                                </a>
+                            </div>
+                            <div class="right-part">
+                                <div class="price-wrap">
+                                    <div class="label">Розничная цена</div>
+                                    <div class="price">9 000 AZN</div>
+                                </div>
+                                <div class="bot-ctrl-stripe">
+                                    <a href="#" class="add-to-wish">
+                                        <i class="demo-icon icon-star-empty"></i>
+                                    </a>
+                                    <input data-styler value="1" step="1" min="1" type="number">
+                                    <a href="#" class="btn btn-std">
+                                        Заказать
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <nav aria-label="navigation">
+                    <ul class="pagination">
+                        <li class="page-item prev-page">
+                            <a class="page-link" href="#">
+                                <i class="demo-icon icon-path-6466"></i>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">22</a></li>
+                        <li class="page-item next-page">
+                            <a class="page-link" href="#">
+                                <i class="demo-icon icon-path-6467"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-right">
+                        <a href="#" class="go-to-basket">
+                            Перейти в корзину
+                        </a>
+                    </div>
+                </nav>
+
+                <div class="category-descr">
+                    <h2 class="h1">
+                        Камеры видеонаблюдения. Тип корпуса
+                    </h2>
+                    <div class="text">
+                        <p>Существует несколько основных разновидностей устройств.</p>
+                        <p>Купольные. Устройство имеет форму полусферы. Подобное
+                            конструктивное решение применимо как для монтажа на улице,
+                            так и внутри зданий. Оборудование закрепляют на потолке
+                            либо стене без использования отдельных кронштейнов.
+                            Направление объектива устройства и окончательная регулировка
+                            проходит быстро – достаточно снять купол.
+                        </p>
+                        <p>
+                            Цилиндрические. Корпус камеры изготовлен в форме цилиндра.
+                            Для защиты объектива предусмотрен козырек, его положение
+                            на некоторых моделях устройств регулируется.
+                        </p>
+                        <p>
+                            PTZ-камеры. Камера оснащена механизмами, которые
+                            позволяют удаленно управлять поворотом, наклоном,
+                            а также фокусным расстоянием, диафрагмой и фокусировкой объектива.
+                        </p>
+                    </div>
                 </div>
 
             </div>
