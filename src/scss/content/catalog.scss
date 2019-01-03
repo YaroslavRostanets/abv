@@ -275,4 +275,14 @@
     color: #333333;
     font-family: 'Proxima Nova Bold';
   }
+  .mobile-filter-selected {
+    display: none;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  .title-filter-btn {
+    & > .cont {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

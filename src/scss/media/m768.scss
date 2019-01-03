@@ -284,11 +284,26 @@
     }
   }
   .catalog-page {
+    .breadcrumb-wrap {
+      display: none;
+    }
     .aside {
       display: none;
     }
     .content-part {
       width: 100%;
+      padding-top: 0;
+      padding-left: 0;
     }
+    .mobile-filter-selected {
+      display: block;
+    }
+    .page-title {
+      display: none;
+    }
+    .title-filter-btn {
+      border-bottom: 1px solid #F5F5F5;
+    }
+
   }
 }
