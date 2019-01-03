@@ -1,6 +1,7 @@
 .catalog-page {
   & > .cont {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 17px;
     padding-bottom: 50px;
   }
@@ -82,6 +83,40 @@
     font-family: 'Proxima Nova Bold';
     margin-bottom: 18px;
   }
+  .js-foldable-filter {
+    &.list-hidden {
+      .filter-title {
+        span {
+          &:after {
+            content: "\e818";
+          }
+        }
+      }
+    }
+    .filter-title {
+      span {
+        position: relative;
+        padding-right: 25px;
+        cursor: pointer;
+        &:after {
+          content: "\e819";
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          background: #FAFAFA;
+          display: inline-flex;
+          border-radius: 11px;
+          font-family: "fontello";
+          align-items: center;
+          justify-content: center;
+          color: #707070;
+        }
+      }
+    }
+  }
   .filter-prices {
     display: flex;
     margin-top: 23px;
@@ -152,6 +187,7 @@
   }
   .aside {
     padding-bottom: 50px;
+    margin-top: -63px;
   }
   .filter-wrap {
     .btn-light {
@@ -171,6 +207,8 @@
     align-items: center;
     padding-top: 7px;
     margin-bottom: 15px;
+    width: 100%;
+    padding-left: 305px;
   }
   .back {
     font-size: 12px;
@@ -225,7 +263,6 @@
     color: #333333;
     display: inline-flex;
     margin-left: auto;
-    margin-top: 33px;
   }
   .navigation {
     .text-right {

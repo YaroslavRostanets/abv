@@ -283,4 +283,12 @@
       flex: auto;
     }
   }
+  .catalog-page {
+    .aside {
+      display: none;
+    }
+    .content-part {
+      width: 100%;
+    }
+  }
 }

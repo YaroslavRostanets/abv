@@ -23,4 +23,6 @@
 .icon-star:before { content: '\e815'; } /* '' */
 .icon-doc:before { content: '\e816'; } /* '' */
 .icon-doc-check:before { content: '\e817'; } /* '' */
+.icon-down-dir:before { content: '\e818'; } /* '' */
+.icon-up-dir:before { content: '\e819'; } /* '' */
 .icon-facebook-1:before { content: '\f09a'; } /* '' */

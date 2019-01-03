@@ -325,4 +325,11 @@ $(document).ready(function(){
         parent.find('.cat-list-cont').slideToggle(150);
     });
 
+    $('.js-foldable-filter .filter-title span').on('click', function(e){
+        e.preventDefault();
+        var parent = $(this).closest('.js-foldable-filter');
+        parent.find('.filter-list').slideToggle(150);
+        parent.toggleClass('list-hidden');
+    });
+
 });

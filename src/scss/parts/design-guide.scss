@@ -582,12 +582,12 @@ body {
     text-decoration: none;
     font-family: 'Proxima Nova Bold';
     display: inline-block;
-    margin-bottom: 14px;
+    min-height: 32px;
   }
   .cat-num {
     font-size: 14px;
     color: #707070;
-    margin-bottom: 12px;
+    min-height: 26px;
     span {
       color: #333333;
     }
