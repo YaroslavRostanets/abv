@@ -555,10 +555,36 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    text-decoration: none;
     img {
       display: block;
       max-width: 150px;
       max-height: 150px;
+    }
+  }
+  .stickers-wrap {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 23px;
+    .sticker {
+      color: #FFFFFF;
+      padding: 6px 10px;
+      text-transform: uppercase;
+      font-size: 11px;
+      border-radius: 13px;
+      font-family: 'Proxima Nova Bold';
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .new {
+      background: #A3D986;
+    }
+    .discount {
+      background: #86C3D9;
     }
   }
   .product-descr {

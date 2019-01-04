@@ -336,4 +336,51 @@
       }
     }
   }
+  .brand-logo {
+    width: 152px;
+    height: 152px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E8E8E8;
+    border-radius: 3px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    img {
+      max-width: 120px;
+      max-height: 120px;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+.brands-catalog-page {
+  .filter-list {
+    li {
+      margin-bottom: 19px;
+    }
+    label {
+      color: #257BA8;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .aside {
+    margin-top: -44px;
+  }
+  .filter-title {
+    margin-bottom: 28px;
+  }
+  .filter-wrap {
+    .btn {
+      width: 100%;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

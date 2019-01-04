@@ -481,7 +481,8 @@
   }
   .catalog-page {
     .filter-wrap {
-      .btn-light {
+      .btn {
+        display: block;
         width: 100%;
         max-width: 290px;
         margin-left: auto;
@@ -576,6 +577,19 @@
       margin-right: 0;
       font-size: 12px;
       min-height: 32px;
+    }
+  }
+  .brands-catalog-page {
+    & > .cont {
+      padding-top: 18px;
+    }
+    .brand-logo {
+      float: none;
+      height: 134px;
+      width: 100%;
+      max-width: 290px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
