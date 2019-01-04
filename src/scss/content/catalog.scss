@@ -283,6 +283,57 @@
     & > .cont {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      height: 50px;
+    }
+    .mobile-page-title {
+      font-size: 14px;
+      color: #333333;
+      font-family: 'Proxima Nova Bold';
+    }
+    .filter-btn {
+      font-size: 25px;
+      color: #707070;
+    }
+  }
+  .filter-selected {
+    & > .cont {
+      padding-top: 15px;
+      padding-bottom: 31px;
+    }
+    .label {
+      font-size: 14px;
+      color: #333333;
+      font-family: 'Proxima Nova Bold';
+      margin-bottom: 17px;
+    }
+    .one-sel-item {
+      color: #707070;
+      font-size: 14px;
+      margin-bottom: 17px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .remove {
+      font-size: 11px;
+      text-decoration: none;
+      color: #707070;
+      position: relative;
+      top: -1px;
+    }
+  }
+  &.show-filters {
+    .content-part {
+      display: none;
+    }
+    .aside {
+      display: block;
+    }
+    .title-filter-btn {
+      .filter-btn {
+        color: #F9A924;
+      }
     }
   }
 }

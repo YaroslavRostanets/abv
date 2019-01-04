@@ -332,4 +332,10 @@ $(document).ready(function(){
         parent.toggleClass('list-hidden');
     });
 
+    $('.js-filter-btn').on('click', function(e){
+        e.preventDefault();
+        console.log('sd');
+        $('.catalog-page').toggleClass('show-filters');
+    });
+
 });

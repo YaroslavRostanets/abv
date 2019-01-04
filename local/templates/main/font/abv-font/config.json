@@ -343,6 +343,26 @@
       "css": "up-dir",
       "code": 59417,
       "src": "fontawesome"
+    },
+    {
+      "uid": "51ac899581a52c81122c1c43ccec1a2e",
+      "css": "union-50",
+      "code": 59418,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M499.9 624.1L123.4 1000-0.7 875.9 375.8 500-0.7 124.5 123.4 0 499.9 376.5 876.4 0 999.8 124.5 624 500 999.8 875.9 876.4 1000Z",
+        "width": 1000
+      },
+      "search": [
+        "union-50"
+      ]
+    },
+    {
+      "uid": "21b42d3c3e6be44c3cc3d73042faa216",
+      "css": "sliders",
+      "code": 61918,
+      "src": "fontawesome"
     }
   ]
 }
