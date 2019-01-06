@@ -1,0 +1,87 @@
+.search-page, .wishlist-page {
+  & > .cont {
+    padding-top: 26px;
+    padding-bottom: 120px;
+  }
+  .breadcrumb {
+    margin-bottom: 15px;
+  }
+  .top-ctrl {
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 10px;
+    b {
+      font-family: 'Proxima Nova Bold';
+    }
+  }
+  .page-title {
+    margin-bottom: 38px;
+  }
+  .one-product {
+    .img-cont {
+      width: 210px;
+      height: 200px;
+      img {
+        max-width: 145px;
+        max-height: 145px;
+      }
+    }
+    .product-descr {
+      padding-top: 13px;
+    }
+    .left-part {
+      padding-top: 10px;
+    }
+    .right-part {
+      padding-bottom: 10px;
+    }
+  }
+  .stickers-wrap {
+    padding-left: 9px;
+  }
+  .price-wrap {
+    text-align: right;
+    .label {
+      margin-bottom: 8px;
+    }
+  }
+  .text-right {
+    margin-top: 32px;
+  }
+  .go-to-basket {
+    color: #333333;
+    font-size: 12px;
+  }
+}
+.wishlist-page {
+  .top-ctrl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    min-height: 50px;
+    .label {
+      margin-right: 10px;
+    }
+    .sort {
+      display: flex;
+    }
+    .show-on-page {
+      display: flex;
+    }
+    b {
+      font-family: 'Proxima Nova Bold';
+    }
+    .dropdown-link {
+      text-decoration: none;
+      color: #707070;
+    }
+    .dropdown-item {
+      text-decoration: none;
+    }
+  }
+}
