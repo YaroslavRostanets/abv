@@ -102,19 +102,24 @@ input[type="email"],
 input[type="password"] {
   font-family: 'Proxima Nova Regular';
   border-radius: 4px;
+  font-size: 14px;
+  &:disabled {
+    background: #FAFAFA;
+    color: #909090;
+    border: 1px solid #FAFAFA;
+  }
   &::placeholder {
     color: #909090;
   }
   &:focus {
     outline: none;
     box-shadow: none;
-    border-color: transparent;
   }
 }
 .form-control {
   border: 1px solid #F0F0F0;
   &:focus {
-    border: 1px solid #F0F0F0;
+    border-color: #F0F0F0;
   }
 }
 select {
@@ -745,6 +750,101 @@ body {
   .prev-page {
     .page-link {
       font-size: 10px;
+    }
+  }
+}
+.jq-radio {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: #E5DDD0;
+  position: relative;
+  margin-bottom: 5px;
+  input[type="radio"] {
+    display: none;
+  }
+  &.checked {
+    background: #F9A924;
+    .jq-radio__div {
+      background: #FFFFFF;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+.jq-selectbox {
+  position: relative;
+  cursor: pointer;
+  &.opened {
+    .jq-selectbox__select-text {
+      &:after {
+        top: 11px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .jq-selectbox__select-text {
+    border: 1px solid #F0F0F0;
+    font-size: 14px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 15px;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 14px;
+      border: 5px solid transparent;
+      border-top: 6px solid #909090;
+    }
+  }
+  .jq-selectbox__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    width: auto !important;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    ul {
+      padding: 0;
+      height: auto;
+      overflow: visible;
+      li {
+        display: block;
+        width: 100%;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        padding: 5px 15px;
+        font-size: 14px;
+        &:hover {
+          color: #16181b;
+          background-color: #f8f9fa;
+        }
+        &:before {
+          display: none;
+        }
+      }
     }
   }
 }

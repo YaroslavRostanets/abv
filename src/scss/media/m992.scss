@@ -406,4 +406,35 @@
       }
     }
   }
+  .basket-table {
+    .prod-img {
+      width: 95px;
+      height: 125px;
+    }
+    .price {
+      font-size: 14px;
+    }
+    .total-price {
+      font-size: 18px;
+    }
+    .total-order {
+      .total-price {
+        font-size: 22px;
+      }
+    }
+    .bot-table {
+      .btn-std {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+    }
+  }
+  .checkout-page {
+    & > .cont {
+      padding-top: 15px;
+    }
+    .address-group {
+      width: 100%;
+    }
+  }
 }

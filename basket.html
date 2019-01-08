@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ABV | Оформление заказа</title>
+    <title>ABV | Корзина</title>
     <link rel="stylesheet" href="local/templates/main/libs/bootstrap/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/slick/slick.css">
@@ -523,7 +523,7 @@
         </div>
     </div>
 </header>
-<main class="checkout-page">
+<main class="basket-page">
     <div class="cont">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -531,264 +531,107 @@
                     <a href="#">Главная</a>
                 </li>
                 <li class="breadcrumb-item active">
-                    Оформление заказа
+                    Корзина
                 </li>
             </ol>
         </nav>
         <h1 class="page-title">
-            Оформление заказа
+            Корзина
         </h1>
-        <div class="checkout-block">
-            <h2 class="block-title">Кто забирает</h2>
-            <div class="group-wrap">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Имя">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Фамилия">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Телефон">
-                </div>
-            </div>
-        </div>
-        <div class="checkout-block">
-            <div class="address-group">
-                <h2 class="block-title">Доставка</h2>
-                <nav>
-                    <div class="nav nav-pills" role="tablist">
-                        <a class="nav-item nav-link active" data-toggle="tab" href="#delivery-to-address" role="tab" aria-controls="nav-home" aria-selected="true">
-                            Доставка на адрес
-                        </a>
-                        <a class="nav-item nav-link" data-toggle="tab" href="#pickup" role="tab" aria-controls="nav-profile" aria-selected="false">
-                            Самовывоз
-                        </a>
-                    </div>
-                </nav>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="delivery-to-address" role="tabpanel">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Город">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Дом">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Корпус">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Парадное">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Этаж">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Квартира">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pickup" role="tabpanel">
-                        <select data-styler>
-                            <option>ул. Анны Ахматовой 18</option>
-                            <option>ул. Владимирская 14, офис 2</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="checkout-block">
-            <h2 class="block-title">Оплата</h2>
-            <nav>
-                <div class="nav payments-tab" role="tablist">
-                    <a class="nav-item nav-link active" data-toggle="tab" href="#cash-payments" role="tab" aria-selected="true">
-                        <label>
-                            <i class="demo-icon icon-wallet"></i>
-                            <input type="radio" name="payment" checked data-styler>
-                            <span>Наличными</span>
-                        </label>
+        <table width="100%" class="basket-table">
+            <tr>
+                <th>Фото</th>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="prod-img">
+                        <img src="local/templates/main/img/content/prod2.jpg" alt="">
                     </a>
-                    <a class="nav-item nav-link" data-toggle="tab" href="#cashless-payments" role="tab" aria-selected="false">
-                        <label>
-                            <i class="demo-icon icon-invoice"></i>
-                            <input type="radio" name="payment" data-styler>
-                            <span>Безналичный расчет</span>
-                        </label>
+                </td>
+                <td>
+                    <a href="#" class="prod-name">
+                        LTV-CCH-400, видеокамера
                     </a>
-                    <a class="nav-item nav-link" data-toggle="tab" href="#card-payment" role="tab" aria-selected="false">
-                        <label>
-                            <i class="demo-icon icon-master-card"></i>
-                            <input type="radio" name="payment" data-styler>
-                            <span>Картой Visa/MasterCard</span>
-                        </label>
+                    <div class="vendor-code">
+                        Артикул поставщика: LTV-CCH-400
+                    </div>
+                </td>
+                <td class="price">
+                    15 000 AZN
+                </td>
+                <td class="count">
+                    1 шт.
+                </td>
+                <td class="total-price">
+                    18 000 AZN
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="prod-img">
+                        <img src="local/templates/main/img/content/prod3.jpg" alt="">
                     </a>
-                </div>
-            </nav>
-            <div class="tab-content payment-content">
-                <div class="tab-pane fade show active" id="cash-payments" role="tabpanel">
-                    <div class="payment-group form-inline">
-                        <div class="form-group">
-                            <label>Способ оплаты</label>
-                            <input type="text" disabled class="form-control" value="Наличными">
-                        </div>
-                        <div class="form-group">
-                            <label>Оплачено бонусами</label>
-                            <input type="text" disabled class="form-control" value="500 AZN">
-                        </div>
-                        <div class="form-group">
-                            <label>Бонусов начислено</label>
-                            <input type="text" disabled class="form-control" value="90 AZN">
-                        </div>
-                        <div class="form-group total-form-group">
-                            <label>К оплате</label>
-                            <input type="text" disabled class="form-control" value="90 000 AZN">
-                        </div>
+                </td>
+                <td>
+                    <a href="#" class="prod-name">
+                        LTV-CCH-400, видеокамера
+                    </a>
+                    <div class="vendor-code">
+                        Артикул поставщика: LTV-CCH-400
                     </div>
-                </div>
-                <div class="tab-pane fade" id="cashless-payments" role="tabpanel">
-                    <div class="payment-group form-inline">
-                        <div class="form-group">
-                            <label>Способ оплаты</label>
-                            <input type="text" disabled class="form-control" value="Безналичный расчет">
-                        </div>
-                        <div class="form-group">
-                            <label>Оплачено бонусами</label>
-                            <input type="text" disabled class="form-control" value="500 AZN">
-                        </div>
-                        <div class="form-group">
-                            <label>Бонусов начислено</label>
-                            <input type="text" disabled class="form-control" value="90 AZN">
-                        </div>
-                        <div class="form-group total-form-group">
-                            <label>К оплате</label>
-                            <input type="text" disabled class="form-control" value="90 000 AZN">
-                        </div>
+                </td>
+                <td class="price">
+                    15 000 AZN
+                </td>
+                <td class="count">
+                    1 шт.
+                </td>
+                <td class="total-price">
+                    18 000 AZN
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="prod-img">
+                        <img src="local/templates/main/img/content/prod4.jpg" alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="#" class="prod-name">
+                        LTV-CCH-400, видеокамера
+                    </a>
+                    <div class="vendor-code">
+                        Артикул поставщика: LTV-CCH-400
                     </div>
-                </div>
-                <div class="tab-pane fade" id="card-payment" role="tabpanel">
-                    <div class="payment-group form-inline">
-                        <div class="form-group">
-                            <label>Способ оплаты</label>
-                            <input type="text" disabled class="form-control" value="Картой Visa/MasterCard">
+                </td>
+                <td class="price">
+                    15 000 AZN
+                </td>
+                <td class="count">
+                    1 шт.
+                </td>
+                <td class="total-price">
+                    18 000 AZN
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div class="bot-table">
+                        <div class="total-order">
+                            <div class="label">Итого без учета доставки</div>
+                            <div class="total-price">90 500 AZN</div>
                         </div>
-                        <div class="form-group">
-                            <label>Оплачено бонусами</label>
-                            <input type="text" disabled class="form-control" value="500 AZN">
-                        </div>
-                        <div class="form-group">
-                            <label>Бонусов начислено</label>
-                            <input type="text" disabled class="form-control" value="90 AZN">
-                        </div>
-                        <div class="form-group total-form-group">
-                            <label>К оплате</label>
-                            <input type="text" disabled class="form-control" value="90 000 AZN">
-                        </div>
+                        <a href="#" class="btn btn-std">
+                            Подтвердить заказ
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="checkout-block basket-block">
-            <div class="block-title-wrap">
-                <h2 class="block-title">Ваш заказ</h2>
-                <a href="#" class="to-basket">
-                    Вернуться в корзину
-                </a>
-            </div>
-            <table width="100%" class="basket-table">
-                <tr>
-                    <th>Фото</th>
-                    <th>Наименование</th>
-                    <th>Цена</th>
-                    <th>Количество</th>
-                    <th>Сумма</th>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#" class="prod-img">
-                            <img src="local/templates/main/img/content/prod2.jpg" alt="">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="prod-name">
-                            LTV-CCH-400, видеокамера
-                        </a>
-                        <div class="vendor-code">
-                            Артикул поставщика: LTV-CCH-400
-                        </div>
-                    </td>
-                    <td class="price">
-                        15 000 AZN
-                    </td>
-                    <td class="count">
-                        1 шт.
-                    </td>
-                    <td class="total-price">
-                        18 000 AZN
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#" class="prod-img">
-                            <img src="local/templates/main/img/content/prod3.jpg" alt="">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="prod-name">
-                            LTV-CCH-400, видеокамера
-                        </a>
-                        <div class="vendor-code">
-                            Артикул поставщика: LTV-CCH-400
-                        </div>
-                    </td>
-                    <td class="price">
-                        15 000 AZN
-                    </td>
-                    <td class="count">
-                        1 шт.
-                    </td>
-                    <td class="total-price">
-                        18 000 AZN
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#" class="prod-img">
-                            <img src="local/templates/main/img/content/prod4.jpg" alt="">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="prod-name">
-                            LTV-CCH-400, видеокамера
-                        </a>
-                        <div class="vendor-code">
-                            Артикул поставщика: LTV-CCH-400
-                        </div>
-                    </td>
-                    <td class="price">
-                        15 000 AZN
-                    </td>
-                    <td class="count">
-                        1 шт.
-                    </td>
-                    <td class="total-price">
-                        18 000 AZN
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="5">
-                        <div class="bot-table">
-                            <div class="total-order">
-                                <div class="label">Итого без учета доставки</div>
-                                <div class="total-price">90 500 AZN</div>
-                            </div>
-                            <a href="#" class="btn btn-std">
-                                Подтвердить заказ
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+                </td>
+            </tr>
+        </table>
     </div>
     <div class="subscripbe-stripe">
         <div class="cont">

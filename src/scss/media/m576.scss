@@ -624,4 +624,132 @@
       }
     }
   }
+  .checkout-page {
+    & > .cont {
+      padding-top: 0;
+    }
+    .page-title {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    .checkout-block {
+      margin-left: -15px;
+      margin-right: -15px;
+      border-right: none;
+      border-left: none;
+      border-top: none;
+      padding: 25px 15px;
+    }
+    .breadcrumb {
+      margin-bottom: 32px;
+    }
+    .block-title {
+      font-size: 14px;
+    }
+    .group-wrap {
+      width: 100%;
+      .form-group {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .nav-pills {
+      width: 100%;
+      .nav-link {
+        width: 50%;
+      }
+    }
+    .address-group {
+      .form-row {
+        .form-group {
+          width: calc( 50% - 10px );
+          &:last-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    .payments-tab {
+      .nav-link {
+        max-width: none;
+      }
+    }
+    .payment-content {
+      display: none;
+    }
+    .basket-block {
+      .block-title-wrap {
+        padding: 0;
+      }
+    }
+  }
+  .basket-table {
+    width: calc( 100% + 30px );
+    margin-left: -15px;
+    margin-right: -15px;
+    border-top: 1px solid #F5F5F5;
+    tr {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      height: 175px;
+      padding: 30px 0 30px 110px;
+      &:first-child {
+        display: none;
+      }
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+    th {
+      display: none
+    }
+    td {
+      &:first-child {
+        padding: 0;
+      }
+    }
+    .prod-name {
+      font-size: 14px;
+    }
+    .price {
+      width: 50%;
+    }
+    .count{
+      width: 50%;
+    }
+    .prod-img {
+      position: absolute;
+      width: 110px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: auto;
+      img {
+        max-width: 75%;
+        max-height: 75%;
+      }
+    }
+    .bot-table {
+      flex-wrap: wrap;
+      .lable {
+        margin-bottom: 8px;
+      }
+      .total-order {
+        margin-right: 0;
+        width: 100%;
+        text-align: left;
+        padding: 0 15px;
+        margin-bottom: 23px;
+      }
+      .btn-std {
+        width: 100%;
+        max-width: 290px;
+        margin: 0 auto;
+        justify-content: center;
+
+      }
+    }
+  }
 }

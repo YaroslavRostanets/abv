@@ -1,13 +1,134 @@
 .checkout-page {
+  & > .cont {
+    padding-top: 25px;
+    padding-bottom: 100px;
+  }
+  .page-title {
+    margin-bottom: 27px;
+  }
   .block-title {
     font-size: 18px;
-    margin: 0 0 0 0;
+    margin: 0 0 19px 0;
     font-family: 'Proxima Nova Bold';
     color: #333333;
   }
   .checkout-block {
     border: 1px solid #F9F9F9;
     border-radius: 4px;
-    padding: 20px;
+    margin-bottom: 19px;
+    padding: 35px 30px;
+  }
+  .group-wrap {
+    width: 326px;
+  }
+  .breadcrumb {
+    margin-bottom: 16px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .nav-pills {
+    .nav-link {
+      width: 184px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+    }
+  }
+  .address-group {
+    width: 765px;
+    nav {
+      margin-bottom: 33px;
+    }
+    .form-row {
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: space-between;
+      .form-group {
+        width: 135px;
+      }
+    }
+  }
+  .payments-tab {
+    .nav-link {
+      height: 200px;
+      width: 175px;
+      border-radius: 3px;
+      border: 1px solid #F4F4F4;
+      margin-right: 11px;
+      padding: 0;
+      text-decoration: none;
+      color: #282828;
+      text-align: center;
+      &.active {
+        border: 1px solid #FD9D0D;
+      }
+      span {
+        display: block;
+      }
+    }
+    .demo-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 75px;
+      height: 140px;
+    }
+    .icon-wallet {
+      font-size: 75px;
+    }
+    .icon-invoice {
+      font-size: 71px;
+    }
+    .icon-master-card {
+      font-size: 61px;
+    }
+    label {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+  .payment-group {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+    label {
+      width: 160px;
+      justify-content: flex-start;
+    }
+    .form-group {
+      margin-bottom: 13px;
+    }
+    .form-control {
+      width: 337px;
+    }
+    .total-form-group {
+      label {
+        font-family: 'Proxima Nova Bold';
+      }
+      input {
+        font-family: 'Proxima Nova Bold';
+      }
+    }
+  }
+  .block-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .to-basket {
+    font-size: 14px;
+    color: #333333;
+  }
+  .basket-block {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    .block-title-wrap {
+      padding: 0 30px;
+    }
   }
 }

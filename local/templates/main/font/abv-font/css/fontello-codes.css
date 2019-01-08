@@ -26,5 +26,8 @@
 .icon-down-dir:before { content: '\e818'; } /* '' */
 .icon-up-dir:before { content: '\e819'; } /* '' */
 .icon-union-50:before { content: '\e81a'; } /* '' */
+.icon-invoice:before { content: '\e81b'; } /* '' */
+.icon-master-card:before { content: '\e81c'; } /* '' */
+.icon-wallet:before { content: '\e81d'; } /* '' */
 .icon-facebook-1:before { content: '\f09a'; } /* '' */
 .icon-sliders:before { content: '\f1de'; } /* '' */

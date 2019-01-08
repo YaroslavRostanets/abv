@@ -306,6 +306,42 @@
     .title-filter-btn {
       border-bottom: 1px solid #F5F5F5;
     }
-
+  }
+  .checkout-page {
+    .payments-tab {
+      .nav-link {
+        width: 100%;
+        max-width: 290px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 19px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      label {
+        display: flex;
+        align-items: center;
+      }
+      .demo-icon {
+        height: 100px;
+        width: 105px;
+        margin-right: 29px;
+      }
+    }
+    .jq-radio {
+      margin-right: 12px;
+    }
+    .address-group {
+      .form-row {
+        justify-content: space-between;
+      }
+      .form-group {
+        &:last-child {
+          margin-right: auto;
+          margin-left: 21px;
+        }
+      }
+    }
   }
 }
