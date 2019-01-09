@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="local/templates/main/libs/formstyler/jquery.formstyler.css">
     <link rel="stylesheet" href="local/templates/main/font/stylesheet.css">
     <link rel="stylesheet" href="local/templates/main/font/abv-font/css/fontello.css">
+    <link rel="stylesheet" href="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="local/templates/main/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -552,14 +553,24 @@
         <div class="comp-view">
             <div class="table-headers-wrap">
                 <div class="ctrls-wrap">
-                    <ul class="nav nav-pills" role="tablist">
+                    <ul class="nav nav-pills js-toggle-tables" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#all-parameters" role="tab" aria-selected="true">
+                            <a class="nav-link active"
+                               data-toggle="pill"
+                               data-table=".js-all-chars"
+                               href="#all-parameters"
+                               role="tab"
+                               aria-selected="true">
                                 Все параметры
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#differences" role="tab" aria-selected="false">
+                            <a class="nav-link"
+                               data-toggle="pill"
+                               data-table=".js-differences"
+                               href="#differences"
+                               role="tab"
+                               aria-selected="false">
                                 Отличия
                             </a>
                         </li>
@@ -651,45 +662,851 @@
                 </div>
             </div>
             <div class="table-content-wrap">
-                <div class="product-column">
-                    <div class="prod-top">
-                        <a href="#" class="img-cont">
-                            <img src="local/templates/main/img/content/prod2.jpg" alt="">
-                        </a>
-                        <a href="#" class="prod-name">
-                            LTV-CCH-400, видеокамера
-                        </a>
-                        <div class="cat-number">
-                            Номер в каталоге: 125565
-                        </div>
-                        <div class="price-buy">
-                            <div class="price">9 000 AZN</div>
-                            <a href="#" class="btn btn-std">
-                                Заказать
+                <div class="table-content-wrap-in">
+                    <div class="product-column">
+                        <div class="prod-top">
+                            <a href="#" class="img-cont">
+                                <img src="local/templates/main/img/content/prod2.jpg" alt="">
                             </a>
+                            <a href="#" class="prod-name">
+                                LTV-CCH-400, видеокамера
+                            </a>
+                            <div class="cat-number">
+                                Номер в каталоге: 125565
+                            </div>
+                            <div class="price-buy">
+                                <div class="price">9 000 AZN</div>
+                                <a href="#" class="btn btn-std">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prod-table-wrap">
+                            <table class="prod-table table table-striped js-all-chars active">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="prod-table table table-striped js-differences">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-                    <div class="prod-table-wrap">
-                        <table class="prod-table table table-striped">
-                            <tr>
-                                <td>Профессиональный</td>
-                            </tr>
-                            <tr>
-                                <td>3 мегапикселя</td>
-                            </tr>
-                            <tr>
-                                <td>1900 об/мин</td>
-                            </tr>
-                            <tr>
-                                <td>Профессиональный</td>
-                            </tr>
-                            <tr>
-                                <td>3 мегапикселя</td>
-                            </tr>
-                            <tr>
-                                <td>3 Гб</td>
-                            </tr>
-                        </table>
+                    <div class="product-column">
+                        <div class="prod-top">
+                            <a href="#" class="img-cont">
+                                <img src="local/templates/main/img/content/prod3.jpg" alt="">
+                            </a>
+                            <a href="#" class="prod-name">
+                                LTV-CCH-400, видеокамера
+                            </a>
+                            <div class="cat-number">
+                                Номер в каталоге: 125565
+                            </div>
+                            <div class="price-buy">
+                                <div class="price">9 000 AZN</div>
+                                <a href="#" class="btn btn-std">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prod-table-wrap">
+                            <table class="prod-table table table-striped js-all-chars active">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="prod-table table table-striped js-differences">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="product-column">
+                        <div class="prod-top">
+                            <a href="#" class="img-cont">
+                                <img src="local/templates/main/img/content/prod4.jpg" alt="">
+                            </a>
+                            <a href="#" class="prod-name">
+                                LTV-CCH-400, видеокамера
+                            </a>
+                            <div class="cat-number">
+                                Номер в каталоге: 125565
+                            </div>
+                            <div class="price-buy">
+                                <div class="price">9 000 AZN</div>
+                                <a href="#" class="btn btn-std">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prod-table-wrap">
+                            <table class="prod-table table table-striped js-all-chars active">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="prod-table table table-striped js-differences">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="product-column">
+                        <div class="prod-top">
+                            <a href="#" class="img-cont">
+                                <img src="local/templates/main/img/content/prod5.jpg" alt="">
+                            </a>
+                            <a href="#" class="prod-name">
+                                LTV-CCH-400, видеокамера
+                            </a>
+                            <div class="cat-number">
+                                Номер в каталоге: 125565
+                            </div>
+                            <div class="price-buy">
+                                <div class="price">9 000 AZN</div>
+                                <a href="#" class="btn btn-std">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prod-table-wrap">
+                            <table class="prod-table table table-striped js-all-chars active">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="prod-table table table-striped js-differences">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="product-column">
+                        <div class="prod-top">
+                            <a href="#" class="img-cont">
+                                <img src="local/templates/main/img/content/prod5.jpg" alt="">
+                            </a>
+                            <a href="#" class="prod-name">
+                                LTV-CCH-400, видеокамера
+                            </a>
+                            <div class="cat-number">
+                                Номер в каталоге: 125565
+                            </div>
+                            <div class="price-buy">
+                                <div class="price">9 000 AZN</div>
+                                <a href="#" class="btn btn-std">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="prod-table-wrap">
+                            <table class="prod-table table table-striped js-all-chars active">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="prod-table table table-striped js-differences">
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Назначение</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Тип</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальная скорость</div>
+                                        <b>1900 об/мин</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Максимальный крутящий момент</div>
+                                        Профессиональный
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Число ступеней крутящего момента</div>
+                                        3 мегапикселя
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobile-label">Патрон</div>
+                                        3 Гб
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1098,6 +1915,7 @@
 <script src="local/templates/main/libs/formstyler/jquery.formstyler.min.js"></script>
 <script src="local/templates/main/libs/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 <script src="local/templates/main/libs/bootstrap-datepicker/bootstrap-datepicker.ru.min.js"></script>
+<script src="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
 <script src="local/templates/main/js/main.js"></script>
 
 </body>

@@ -865,3 +865,23 @@ body {
     }
   }
 }
+.table-striped {
+  margin-bottom: 0;
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: #FFFFFF;
+      }
+      &:nth-child(even) {
+        background-color: #FAFAFA;
+      }
+    }
+  }
+
+  td {
+    padding: 16px 12px;
+  }
+  b {
+    font-family: 'Proxima Nova Bold';
+  }
+}

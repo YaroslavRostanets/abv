@@ -104,12 +104,36 @@ $(document).ready(function(){
 
         }
 
+        $('.table-content-wrap').mCustomScrollbar('destroy');
+
+        $('.table-content-wrap-in').slick({
+            dots: false,
+            infinite: false,
+            slidesToShow: 2,
+            adaptiveHeight: true,
+            prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
+            nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>',
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
     }
 
     function runTablet(){
         console.log('tablet');
         destroySlick('.js-i-block-wrap');
         destroySlick('.js-brands-left');
+        destroySlick('.table-content-wrap-in');
+
+        $('.table-content-wrap').mCustomScrollbar({
+            axis:"x"
+        });
 
     }
 
@@ -117,6 +141,11 @@ $(document).ready(function(){
         console.log('desctop');
         destroySlick('.js-i-block-wrap');
         destroySlick('.js-brands-left');
+        destroySlick('.table-content-wrap-in');
+
+        $('.table-content-wrap').mCustomScrollbar({
+            axis:"x"
+        });
     }
 
     $(window).getDevice(768,1024);
@@ -337,5 +366,17 @@ $(document).ready(function(){
         console.log('sd');
         $('.catalog-page').toggleClass('show-filters');
     });
+
+    /*-- Сравнение --*/
+
+    $('.js-toggle-tables a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+        console.log('toggle', e.currentTarget);
+        var showTable = $(e.currentTarget).attr('data-table');
+        $(showTable).siblings().hide();
+        $(showTable).fadeIn(150);
+        e.target;
+        e.relatedTarget;
+    });
+
 
 });

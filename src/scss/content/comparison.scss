@@ -1,19 +1,47 @@
 .comparison-page {
   & > .cont {
     padding-top: 26px;
+    padding-bottom: 100px;
   }
   .breadcrumb {
     margin-bottom: 17px;
   }
   .comp-view {
     display: flex;
+    align-items: flex-start;
   }
   .table-headers-wrap {
     width: 440px;
     border-right: 1px solid #EEEEEE;
+    overflow: hidden;
   }
   .table-content-wrap {
     width: calc( 100% - 440px );
+    overflow: auto;
+    .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+      bottom: auto;
+      top: 0;
+    }
+    .mCSB_draggerContainer {
+      background: #D8D8D8;
+    }
+    .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+      height: 5px;
+      margin: 3px 0;
+      background: #9D9D9D;
+      border-radius: 3px;
+    }
+    .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+      height: 5px;
+      margin: 3px 0;
+      background: transparent;
+    }
+    .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+      height: 11px;
+    }
+  }
+  .table-content-wrap-in {
+    display: flex;
   }
   .page-title {
     margin-bottom: 16px;
@@ -40,11 +68,24 @@
       margin-bottom: 22px;
       .nav-link {
         width: 184px;
+        position: relative;
+        &.active {
+          &:after {
+            content: "";
+            height: 1px;
+            background: #FD8E00;
+            position: absolute;
+            bottom: -24px;
+            left: -35px;
+            right: -35px;
+          }
+        }
       }
     }
   }
   .product-column {
     width: 255px;
+    min-width: 255px;
     border-right: 1px solid #EEEEEE;
     .img-cont {
       width: 145px;
@@ -95,5 +136,15 @@
     width: 100%;
     padding: 10px 20px 10px 20px;
     border-bottom: 1px solid #E5E5E5;
+  }
+  .prod-table {
+    display: none;
+    font-size: 14px;
+    &.active {
+      display: table;
+    }
+  }
+  .mobile-label {
+    display: none;
   }
 }

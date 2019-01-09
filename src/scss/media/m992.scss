@@ -437,4 +437,43 @@
       width: 100%;
     }
   }
+  .comparison-page {
+    & > .cont {
+      padding-top: 16px;
+    }
+    .breadcrumb {
+      margin-bottom: 10px;
+    }
+    .table-headers-wrap {
+      width: 240px;
+    }
+    .table-content-wrap {
+      width: calc( 100% - 240px );
+    }
+    .tags-wrap {
+      margin-bottom: 24px;
+    }
+    .ctrls-wrap {
+      border-bottom: 1px solid #FE9D0B;
+      .nav-pills {
+        .nav-link {
+          width: auto;
+          font-size: 12px;
+          padding: 10px 16px;
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+    .product-column {
+      width: 259px;
+      min-width: 259px;
+    }
+  }
+  .table-striped {
+    td {
+      padding: 25px 12px 6px 12px;
+    }
+  }
 }

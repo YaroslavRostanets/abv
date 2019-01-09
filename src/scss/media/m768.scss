@@ -344,4 +344,56 @@
       }
     }
   }
+  .table-striped {
+    td {
+      padding: 15px 12px 15px 12px;
+    }
+  }
+  .comparison-page {
+    .comp-view {
+      flex-wrap: wrap;
+    }
+    .table-headers-wrap {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #E5E5E5;
+    }
+    .tags-wrap {
+      display: none;
+    }
+    .ctrls-wrap {
+      height: auto;
+      border-bottom: none;
+    }
+    .table-headers {
+      display: none;
+    }
+    .table-content-wrap {
+      width: 100%;
+    }
+    .product-column {
+      min-width: 0;
+      &:first-child {
+        border-left: 1px solid #EEE;
+      }
+    }
+    .table-content-wrap-in {
+      .prev-arrow {
+        top: 80px;
+        right: auto;
+        left: 15px;
+      }
+      .next-arrow {
+        top: 80px;
+        right: 15px;
+        left: auto;
+      }
+    }
+    .mobile-label {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 6px;
+      font-family: 'Proxima Nova Semibold';
+    }
+  }
 }

@@ -763,4 +763,70 @@
       top: 10px;
     }
   }
+  .comparison-page {
+    & > .cont {
+      padding-top: 0;
+    }
+    .page-title {
+      font-size: 18px;
+    }
+    .ctrls-wrap {
+      .nav-pills {
+        max-width: 290px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+        .nav-item {
+          width: 50%;
+        }
+      }
+    }
+    .comp-view {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    .product-column {
+      border-right: none;
+      &:first-child {
+        border-left: none;
+      }
+      .img-cont {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height: 100px;
+      }
+      .cat-number {
+        font-size: 12px;
+      }
+      .prod-name {
+        min-height: 30px;
+      }
+      .price {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+    }
+    .prod-top {
+      text-align: center;
+      padding: 25px 20px;
+    }
+    .price-buy {
+      flex-direction: column;
+    }
+    .price {
+      margin-right: 0;
+    }
+    .btn-std {
+      width: 100%;
+      max-width: 290px;
+    }
+    .breadcrumb {
+      margin-bottom: 33px;
+    }
+    .page-title {
+      margin-bottom: 32px;
+    }
+  }
 }
