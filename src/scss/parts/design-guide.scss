@@ -43,6 +43,23 @@ a {
     border: 1px solid #F9A924 !important;
   }
 }
+.btn-light-gray {
+  background: none;
+  border: 1px solid #EAEAEA;
+  color: #333333;
+  box-shadow: none;
+  &.active {
+    border: 1px solid #FD8E00;
+  }
+  &:hover {
+    border: 1px solid #FD8E00;
+    text-decoration: none;
+    color: #333333;
+  }
+  &:active {
+    border: 1px solid #FD8E00;
+  }
+}
 .slick-arrow {
   width: 30px;
   height: 30px;
