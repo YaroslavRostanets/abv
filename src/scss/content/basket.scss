@@ -83,4 +83,26 @@
       align-items: center;
     }
   }
+  .remove {
+    font-size: 16px;
+    color: #E81D19;
+  }
+}
+.basket-page {
+  & > .cont {
+    padding-top: 25px;
+    padding-bottom: 100px;
+  }
+  .breadcrumb {
+    margin-bottom: 16px;
+  }
+  .basket-table {
+    tr {
+      &:last-child {
+        td {
+          padding-right: 0;
+        }
+      }
+    }
+  }
 }

@@ -752,4 +752,15 @@
       }
     }
   }
+  .basket-page {
+    .page-title {
+      font-size: 18px;
+      margin-bottom: 17px;
+    }
+    .remove {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
 }
