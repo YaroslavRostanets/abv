@@ -829,4 +829,20 @@
       margin-bottom: 32px;
     }
   }
+  .profile-page {
+    .profile-nav-wrap {
+      margin-left: -15px;
+      margin-right: -15px;
+      width: calc( 100% + 30px );
+      & > .btn {
+
+      }
+    }
+    .form-group {
+      width: 100%;
+    }
+    .checkbox-form-group {
+      padding-left: 0;
+    }
+  }
 }

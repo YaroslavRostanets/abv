@@ -378,5 +378,15 @@ $(document).ready(function(){
         e.relatedTarget;
     });
 
+    /*-- Профиль --*/
+
+    $('.js-toggle-whatsapp').on('click', function(){
+        var val = $(this).find('input[type=checkbox]').is(":checked");
+        if(val){
+            $('.js-form-group-value').show();
+        } else {
+            $('.js-form-group-value').hide();
+        }
+    });
 
 });

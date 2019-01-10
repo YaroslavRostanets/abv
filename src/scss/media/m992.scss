@@ -476,4 +476,22 @@
       padding: 25px 12px 6px 12px;
     }
   }
+  .profile-nav {
+    padding: 0 10px 0 0;
+  }
+  .profile-page {
+    & > .cont {
+      padding-top: 13px;
+    }
+    .profile-nav {
+      width: 190px;
+    }
+    .profile-cont {
+      width: calc(100% - 190px);
+      padding: 32px 38px;
+    }
+    .checkbox-form-group {
+      width: auto;
+    }
+  }
 }

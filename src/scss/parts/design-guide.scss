@@ -885,3 +885,47 @@ body {
     font-family: 'Proxima Nova Bold';
   }
 }
+.date-picker-wrap {
+  input {
+    padding-right: 42px;
+  }
+  position: relative;
+  &:after {
+    content: "\e814";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 25px;
+    font-size: 22px;
+    color: #F9A924;
+    font-family: "fontello";
+  }
+}
+.profile-nav {
+  padding: 0 20px 0 0;
+  margin: 0;
+  .nav-item {
+    padding-left: 0;
+    display: block;
+    width: 100%;
+    &:before {
+      display: none;
+    }
+  }
+  .nav-link {
+    padding: 12px 14px;
+    border-radius: 4px;
+    &.active {
+      background: #FFF6EB;
+      border: 1px solid #FD8E00;
+      color: #333333;
+      text-decoration: none;
+    }
+  }
+}
+.jq-selectbox {
+  select {
+    display: none;
+  }
+}

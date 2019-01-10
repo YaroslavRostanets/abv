@@ -1,0 +1,92 @@
+.profile-page {
+  & > .cont {
+    padding-top: 26px;
+    padding-bottom: 100px;
+  }
+  .profile-cols {
+    display: flex;
+    align-items: flex-start;
+  }
+  .profile-nav-wrap {
+    width: 255px;
+    padding-top: 20px;
+    padding-right: 20px;
+    & > .btn {
+      display: none;
+    }
+    .dropdown-menu {
+      display: block;
+      border: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      position: static;
+    }
+    .dropdown-item {
+      padding: 12px 14px;
+      border-radius: 4px;
+      color: #257BA8;
+      &:hover {
+        background: none;
+      }
+      &.active {
+        background: #FFF6EB;
+        border: 1px solid #FD8E00;
+        color: #333333;
+        text-decoration: none;
+      }
+    }
+  }
+  .profile-cont {
+    width: calc( 100% - 255px );
+    border: 1px solid #FBFBFB;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+  }
+  .page-title {
+    margin-bottom: 28px;
+  }
+  .form-group {
+    margin-bottom: 11px;
+    width: 335px;
+  }
+  .form-row {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
+  .group {
+    margin-bottom: 28px;
+    .group-title {
+      font-size: 18px;
+      font-family: 'Proxima Nova Bold';
+      margin-bottom: 20px;
+    }
+  }
+  .checkbox-form-group {
+    display: flex;
+    align-content: center;
+    font-size: 14px;
+    color: #909090;
+    padding-left: 20px;
+    .jq-checkbox {
+      margin-right: 5px;
+    }
+    .form-check-label {
+      margin-top: 2px;
+    }
+  }
+  .jq-selectbox {
+    width: 100%;
+  }
+  .jq-selectbox__select-text {
+    border-radius: 5px;
+    color: #909090;
+  }
+  .confirm {
+    font-size: 14px;
+    width: 325px;
+  }
+}

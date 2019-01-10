@@ -396,4 +396,104 @@
       font-family: 'Proxima Nova Semibold';
     }
   }
+  .profile-page {
+    & > .cont {
+      padding-top: 0;
+      & > nav {
+        display: none;
+      }
+    }
+    .profile-cols {
+      flex-wrap: wrap;
+    }
+    .profile-nav-wrap {
+      width: 100%;
+      padding-right: 0;
+      padding-top: 0;
+      &.show {
+        & > .btn {
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      & > .btn {
+        display: flex;
+        align-items: center;
+        font-family: 'Proxima Nova Bold';
+        padding: 0 30px 0 15px;
+        height: 50px;
+        border-radius: 0;
+        background: #FAFAFA;
+        border: none;
+        color: #333333;
+        box-shadow: none !important;
+        &:after {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          margin-top: -2px;
+        }
+      }
+      .dropdown-menu {
+        position: absolute;
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+      .dropdown-item {
+        border: none;
+        border-bottom: 1px solid #E8E8E8;
+        color: #257BA8;
+        font-size: 14px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        height: 52px;
+        &:after {
+          content: "\e807";
+          font-family: "fontello";
+          font-size: 11px;
+          position: absolute;
+          right: 11px;
+          color: #707070;
+        }
+        &.active {
+          background: none;
+          text-decoration: none;
+          color: #333333;
+          border: none;
+          border-bottom: 1px solid #E8E8E8;
+        }
+      }
+    }
+    .profile-cont {
+      width: 100%;
+      padding: 0;
+      border: none;
+      padding-top: 16px;
+    }
+    .page-title {
+      display: none;
+    }
+    .form-group {
+      margin-bottom: 19px;
+    }
+    .group {
+      margin-bottom: 15px;
+    }
+    .confirm {
+      width: 100%;
+      height: 40px;
+    }
+    .is-invalid {
+      border-color: #F23232;
+    }
+    .text-danger {
+      color: #EF3737 !important;
+      text-align: right;
+      font-size: 11px;
+    }
+  }
 }

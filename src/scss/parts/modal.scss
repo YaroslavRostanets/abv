@@ -149,23 +149,6 @@
   select {
     color: #909090;
   }
-  .date-picker-wrap {
-    input {
-      padding-right: 42px;
-    }
-    position: relative;
-    &:after {
-      content: "\e814";
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      height: 25px;
-      font-size: 22px;
-      color: #F9A924;
-      font-family: "fontello";
-    }
-  }
   .form-control {
     font-size: 14px;
   }

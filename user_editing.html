@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ABV | Оформление заказа</title>
+    <title>ABV | Личные данные</title>
     <link rel="stylesheet" href="local/templates/main/libs/bootstrap/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="local/templates/main/libs/slick/slick.css">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="local/templates/main/libs/formstyler/jquery.formstyler.css">
     <link rel="stylesheet" href="local/templates/main/font/stylesheet.css">
     <link rel="stylesheet" href="local/templates/main/font/abv-font/css/fontello.css">
+    <link rel="stylesheet" href="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="local/templates/main/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -523,7 +524,7 @@
         </div>
     </div>
 </header>
-<main class="checkout-page">
+<main class="profile-page">
     <div class="cont">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -531,263 +532,108 @@
                     <a href="#">Главная</a>
                 </li>
                 <li class="breadcrumb-item active">
-                    Оформление заказа
+                    Ваш профиль
                 </li>
             </ol>
         </nav>
-        <h1 class="page-title">
-            Оформление заказа
-        </h1>
-        <div class="checkout-block">
-            <h2 class="block-title">Кто забирает</h2>
-            <div class="group-wrap">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Имя">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Фамилия">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Телефон">
+        <div class="profile-cols">
+
+            <div class="profile-nav-wrap dropdown">
+                <a class="btn btn-secondary dropdown-toggle" id="profile-menu" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Личные данные
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="proifle-menu">
+                    <a class="dropdown-item active" href="#">История заказов</a>
+                    <a class="dropdown-item" href="#">Учебный центр</a>
+                    <a class="dropdown-item" href="#">Проекты</a>
+                    <a class="dropdown-item" href="#">Настройки представления</a>
                 </div>
             </div>
-        </div>
-        <div class="checkout-block">
-            <div class="address-group">
-                <h2 class="block-title">Доставка</h2>
-                <nav>
-                    <div class="nav nav-pills" role="tablist">
-                        <a class="nav-item nav-link active" data-toggle="tab" href="#delivery-to-address" role="tab" aria-controls="nav-home" aria-selected="true">
-                            Доставка на адрес
-                        </a>
-                        <a class="nav-item nav-link" data-toggle="tab" href="#pickup" role="tab" aria-controls="nav-profile" aria-selected="false">
-                            Самовывоз
-                        </a>
-                    </div>
-                </nav>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="delivery-to-address" role="tabpanel">
+
+            <div class="profile-cont">
+                <h1 class="page-title">
+                    Личные данные
+                </h1>
+                <form action="#">
+                    <div class="group">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Город">
+                            <input type="text" class="form-control is-invalid" placeholder="Имя *">
+                            <small class="form-text text-danger">Ошибка заполенения</small>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Фамилия *">
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Дом">
+                                <input type="text" class="form-control" placeholder="Номер телефона *">
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Корпус">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Парадное">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Этаж">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Квартира">
+                            <div class="form-group checkbox-form-group js-toggle-whatsapp">
+                                <input type="checkbox" id="whatsapp-checkbox" data-styler>
+                                <label class="form-check-label" for="whatsapp-checkbox">WhatsApp</label>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pickup" role="tabpanel">
-                        <select data-styler>
-                            <option>ул. Анны Ахматовой 18</option>
-                            <option>ул. Владимирская 14, офис 2</option>
-                        </select>
+
+                    <div class="group">
+                        <div class="form-group js-form-group-value" style="display: none;">
+                            <input type="text" class="form-control" placeholder="Номер телефона WhatsApp*">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Второй номер телефона *">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-mail *">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Город *">
+                        </div>
                     </div>
-                </div>
+
+                    <div class="group">
+                        <div class="form-group">
+                            <select data-styler >
+                                <option>Физическле лицо</option>
+                                <option>Юр. лицо</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Название компании *">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Должность *">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="VEON">
+                        </div>
+                        <div class="form-group">
+                            <div class="date-picker-wrap">
+                                <input type="text" class="form-control datepicker" placeholder="Дата рождения">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <h4 class="group-title">
+                            Сменить пароль
+                        </h4>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Старый пароль">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Новый пароль">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Повторите пароль">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-std confirm">
+                        Сохранить изменения
+                    </button>
+
+                </form>
             </div>
-        </div>
-        <div class="checkout-block">
-            <h2 class="block-title">Оплата</h2>
-            <nav>
-                <div class="nav payments-tab" role="tablist">
-                    <a class="nav-item nav-link active" data-toggle="tab" href="#cash-payments" role="tab" aria-selected="true">
-                        <label>
-                            <i class="demo-icon icon-wallet"></i>
-                            <input type="radio" name="payment" checked data-styler>
-                            <span>Наличными</span>
-                        </label>
-                    </a>
-                    <a class="nav-item nav-link" data-toggle="tab" href="#cashless-payments" role="tab" aria-selected="false">
-                        <label>
-                            <i class="demo-icon icon-invoice"></i>
-                            <input type="radio" name="payment" data-styler>
-                            <span>Безналичный расчет</span>
-                        </label>
-                    </a>
-                    <a class="nav-item nav-link" data-toggle="tab" href="#card-payment" role="tab" aria-selected="false">
-                        <label>
-                            <i class="demo-icon icon-master-card"></i>
-                            <input type="radio" name="payment" data-styler>
-                            <span>Картой Visa/MasterCard</span>
-                        </label>
-                    </a>
-                </div>
-            </nav>
-            <div class="tab-content payment-content">
-                <div class="tab-pane fade show active" id="cash-payments" role="tabpanel">
-                    <div class="payment-group form-inline">
-                        <div class="form-group">
-                            <label>Способ оплаты</label>
-                            <input type="text" disabled class="form-control" value="Наличными">
-                        </div>
-                        <div class="form-group">
-                            <label>Оплачено бонусами</label>
-                            <input type="text" disabled class="form-control" value="500 AZN">
-                        </div>
-                        <div class="form-group">
-                            <label>Бонусов начислено</label>
-                            <input type="text" disabled class="form-control" value="90 AZN">
-                        </div>
-                        <div class="form-group total-form-group">
-                            <label>К оплате</label>
-                            <input type="text" disabled class="form-control" value="90 000 AZN">
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="cashless-payments" role="tabpanel">
-                    <div class="payment-group form-inline">
-                        <div class="form-group">
-                            <label>Способ оплаты</label>
-                            <input type="text" disabled class="form-control" value="Безналичный расчет">
-                        </div>
-                        <div class="form-group">
-                            <label>Оплачено бонусами</label>
-                            <input type="text" disabled class="form-control" value="500 AZN">
-                        </div>
-                        <div class="form-group">
-                            <label>Бонусов начислено</label>
-                            <input type="text" disabled class="form-control" value="90 AZN">
-                        </div>
-                        <div class="form-group total-form-group">
-                            <label>К оплате</label>
-                            <input type="text" disabled class="form-control" value="90 000 AZN">
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="card-payment" role="tabpanel">
-                    <div class="payment-group form-inline">
-                        <div class="form-group">
-                            <label>Способ оплаты</label>
-                            <input type="text" disabled class="form-control" value="Картой Visa/MasterCard">
-                        </div>
-                        <div class="form-group">
-                            <label>Оплачено бонусами</label>
-                            <input type="text" disabled class="form-control" value="500 AZN">
-                        </div>
-                        <div class="form-group">
-                            <label>Бонусов начислено</label>
-                            <input type="text" disabled class="form-control" value="90 AZN">
-                        </div>
-                        <div class="form-group total-form-group">
-                            <label>К оплате</label>
-                            <input type="text" disabled class="form-control" value="90 000 AZN">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="checkout-block basket-block">
-            <div class="block-title-wrap">
-                <h2 class="block-title">Ваш заказ</h2>
-                <a href="#" class="to-basket">
-                    Вернуться в корзину
-                </a>
-            </div>
-            <table width="100%" class="basket-table">
-                <tr>
-                    <th>Фото</th>
-                    <th>Наименование</th>
-                    <th>Цена</th>
-                    <th>Количество</th>
-                    <th>Сумма</th>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#" class="prod-img">
-                            <img src="local/templates/main/img/content/prod2.jpg" alt="">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="prod-name">
-                            LTV-CCH-400, видеокамера
-                        </a>
-                        <div class="vendor-code">
-                            Артикул поставщика: LTV-CCH-400
-                        </div>
-                    </td>
-                    <td class="price">
-                        15 000 AZN
-                    </td>
-                    <td class="count">
-                        1 шт.
-                    </td>
-                    <td class="total-price">
-                        18 000 AZN
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#" class="prod-img">
-                            <img src="local/templates/main/img/content/prod3.jpg" alt="">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="prod-name">
-                            LTV-CCH-400, видеокамера
-                        </a>
-                        <div class="vendor-code">
-                            Артикул поставщика: LTV-CCH-400
-                        </div>
-                    </td>
-                    <td class="price">
-                        15 000 AZN
-                    </td>
-                    <td class="count">
-                        1 шт.
-                    </td>
-                    <td class="total-price">
-                        18 000 AZN
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#" class="prod-img">
-                            <img src="local/templates/main/img/content/prod4.jpg" alt="">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="prod-name">
-                            LTV-CCH-400, видеокамера
-                        </a>
-                        <div class="vendor-code">
-                            Артикул поставщика: LTV-CCH-400
-                        </div>
-                    </td>
-                    <td class="price">
-                        15 000 AZN
-                    </td>
-                    <td class="count">
-                        1 шт.
-                    </td>
-                    <td class="total-price">
-                        18 000 AZN
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="5">
-                        <div class="bot-table">
-                            <div class="total-order">
-                                <div class="label">Итого без учета доставки</div>
-                                <div class="total-price">90 500 AZN</div>
-                            </div>
-                            <a href="#" class="btn btn-std">
-                                Подтвердить заказ
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
         </div>
     </div>
     <div class="subscripbe-stripe">
@@ -1053,7 +899,7 @@
                                         <input type="email" class="form-control" placeholder="E-mail">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Пароль">
+                                        <input type="text" class="form-control" placeholder="Пароль">
                                     </div>
                                     <div class="btns-row">
                                         <button class="btn btn-std" type="submit">Войти</button>
@@ -1193,7 +1039,14 @@
 <script src="local/templates/main/libs/formstyler/jquery.formstyler.min.js"></script>
 <script src="local/templates/main/libs/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 <script src="local/templates/main/libs/bootstrap-datepicker/bootstrap-datepicker.ru.min.js"></script>
+<script src="local/templates/main/libs/mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
 <script src="local/templates/main/js/main.js"></script>
+
+<script>
+    $('.datepicker').datepicker({
+        language: 'ru'
+    });
+</script>
 
 </body>
 </html>
