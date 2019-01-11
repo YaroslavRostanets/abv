@@ -93,21 +93,25 @@
     display: flex;
     justify-content: space-between;
   }
+  .show-on-time {
+    position: relative;
+
+    .form-control {
+      width: 100px;
+    }
+    .input-daterange {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    .input-group-addon {
+      margin: 0 5px;
+    }
+  }
   .show-on-page {
     display: flex;
-    padding-right: 40px;
+    align-items: center;
     position: relative;
-    &:after {
-      content: "\e814";
-      width: 23px;
-      height: 23px;
-      font-family: "fontello";
-      position: absolute;
-      font-size: 23px;
-      right: 0;
-      top: 0;
-      margin-top: -5px;
-    }
     .label {
       font-size: 14px;
       color: #282828;
@@ -120,21 +124,48 @@
     a {
       text-decoration: none;
     }
+    .show-time {
+      width: 45px;
+      height: 45px;
+      position: relative;
+      margin-left: 25px;
+      &:after {
+        content: "\e814";
+        font-size: 25px;
+        position: absolute;
+        font-family: "fontello";
+        top: 50%;
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        color: #282828;
+        transform: translate(-50%,-50%);
+      }
+    }
   }
   .one-order {
     border: 1px solid #FBFBFB;
     border-radius: 4px;
     margin-bottom: 10px;
+    transition: all 0.1s ease;
+    &:hover {
+      border: 1px solid #FDAC45;
+      .order-link {
+        background: #FFF6EB;
+      }
+    }
     &:last-child {
       margin-bottom: 0;
     }
     .order-info {
       padding: 0 12px;
       border-top: 1px solid #FBFBFB;
+      display: none;
     }
     .order-info-descr {
       display: flex;
       padding-top: 14px;
+      padding-bottom: 14px;
       border-bottom: 1px solid #F9F9F9;
     }
     .payment-status {
@@ -156,6 +187,7 @@
       text-decoration: none;
       display: flex;
       padding: 10px 10px;
+      transition: all 0.1s ease;
       .label {
         display: block;
         margin-bottom: 7px;
@@ -192,12 +224,33 @@
         }
       }
     }
+    .bottom-order {
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid #FAFAFA;
+      .js-hide-detail {
+        font-size: 14px;
+        color: #333333;
+      }
+    }
   }
   .ordered-products {
     width: 100%;
     border-collapse: collapse;
+    color: #707070;
+    font-size: 14px;
     tr {
       border-bottom: 1px solid #FAFAFA;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    td {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      vertical-align: middle;
     }
     .img-cont {
       width: 100px;
@@ -207,14 +260,25 @@
       justify-content: center;
       border: 1px solid #F0F0F0;
       border-radius: 4px;
-      margin-top: 10px;
+      margin-right: 13px;
       img {
         display: block;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 90%;
+        max-height: 90%;
         width: auto;
         height: auto;
       }
+    }
+    .prod-name {
+      font-size: 14px;
+      font-family: 'Proxima Nova Semibold';
+      text-decoration: none;
+      margin-bottom: 10px;
+      color: #333333;
+      display: block;
+    }
+    b {
+      font-family: 'Proxima Nova Bold';
     }
   }
 }

@@ -135,4 +135,33 @@
       padding-left: 0;
     }
   }
+  .profile-page {
+    .one-order {
+      font-size: 12px;
+      .order-status {
+        width: 125px;
+      }
+      .order-link {
+        font-size: 12px;
+      }
+      .order-total {
+        width: 105px;
+      }
+      .payment-status {
+        width: 105px;
+      }
+      .order-num {
+        width: 150px;
+        min-width: 150px;
+      }
+      .order-table {
+        td {
+          &:first-child {
+            font-size: 12px;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
 }

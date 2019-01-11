@@ -557,24 +557,35 @@
                     <h1 class="page-title">
                         История заказов
                     </h1>
-                    <div class="show-on-page">
-                        <div class="label">Показывать на странице: </div>
-                        <div class="dropdown">
-                            <a class="dropdown-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                10 товаров
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">20 товаров</a>
-                                <a class="dropdown-item" href="#">30 товаров</a>
+                    <div class="show-on-time">
+                        <div class="show-on-page">
+                            <div class="label">Показывать: </div>
+                            <div class="dropdown">
+                                <a class="dropdown-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    За все время
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">20 товаров</a>
+                                    <a class="dropdown-item" href="#">30 товаров</a>
+                                </div>
                             </div>
+                            <a href="#" class="show-time js-show-time"></a>
                         </div>
+                        <div class="input-group input-daterange js-order-daterange">
+                            <div class="input-group-addon">с</div>
+                            <input type="text" class="form-control" value="2012-04-05">
+                            <div class="input-group-addon">по</div>
+                            <input type="text" class="form-control" value="2012-04-19">
+                        </div>
+
                     </div>
+
                 </div>
 
                 <div class="order-wrap">
 
                     <div class="one-order">
-                        <a href="#" class="order-link">
+                        <a href="#" class="order-link js-order-link">
                             <span class="order-num">
                                 <span class="label">№ Заказа:</span>
                                 463636
@@ -673,24 +684,448 @@
                                         <b>9 000  AZN</b>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod4.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
                             </table>
                             <div class="products-wrap">
                                 <div class="one-order-prod">
 
-
                                 </div>
+                            </div>
+
+                            <div class="bottom-order">
+                                <a href="#" class="js-hide-detail">
+                                    Свернуть детали
+                                </a>
                             </div>
                             
                         </div>
                     </div>
 
                     <div class="one-order">
-                        <a href="#" class="order-link">
-                            <span class="order-num"></span>
-                            <span class="order-status"></span>
-                            <span class="order-date"></span>
-                            <span class="order-total"></span>
+                        <a href="#" class="order-link js-order-link">
+                            <span class="order-num">
+                                <span class="label">№ Заказа:</span>
+                                463636
+                            </span>
+                            <span class="order-status">
+                                <span class="label">Статус:</span>
+                                Отправлен
+                            </span>
+                            <span class="order-date">
+                                <span class="label">Дата заказа:</span>
+                                2 августа 2018
+                            </span>
+                            <span class="order-total">
+                                <span class="label">4 товара</span>
+                                <b>на 970 AZN</b>
+                            </span>
                         </a>
+                        <div class="order-info">
+                            <div class="order-info-descr">
+                                <table class="order-table">
+                                    <tr>
+                                        <td>Способ доставки</td>
+                                        <td>DHL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Город</td>
+                                        <td>Тбилиси</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Адрес</td>
+                                        <td>Алматинская, 2а</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Контактное лицо</td>
+                                        <td>Равшан</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Телефон</td>
+                                        <td>+7 495 676 65 54</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Стоиомсть доставки</td>
+                                        <td>25 000 руб.</td>
+                                    </tr>
+                                </table>
+                                <div class="payment-status">
+                                    <div>
+                                        <div class="label">Оплата</div>
+                                        Банковской картой
+                                    </div>
+                                    <div>
+                                        <div class="label">Статус оплаты</div>
+                                        <div class="text-success">Оплачено</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="ordered-products">
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod3.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod2.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod4.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="products-wrap">
+                                <div class="one-order-prod">
+
+                                </div>
+                            </div>
+
+                            <div class="bottom-order">
+                                <a href="#" class="js-hide-detail">
+                                    Свернуть детали
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="one-order">
+                        <a href="#" class="order-link js-order-link">
+                            <span class="order-num">
+                                <span class="label">№ Заказа:</span>
+                                463636
+                            </span>
+                            <span class="order-status">
+                                <span class="label">Статус:</span>
+                                Отправлен
+                            </span>
+                            <span class="order-date">
+                                <span class="label">Дата заказа:</span>
+                                2 августа 2018
+                            </span>
+                            <span class="order-total">
+                                <span class="label">4 товара</span>
+                                <b>на 970 AZN</b>
+                            </span>
+                        </a>
+                        <div class="order-info">
+                            <div class="order-info-descr">
+                                <table class="order-table">
+                                    <tr>
+                                        <td>Способ доставки</td>
+                                        <td>DHL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Город</td>
+                                        <td>Тбилиси</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Адрес</td>
+                                        <td>Алматинская, 2а</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Контактное лицо</td>
+                                        <td>Равшан</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Телефон</td>
+                                        <td>+7 495 676 65 54</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Стоиомсть доставки</td>
+                                        <td>25 000 руб.</td>
+                                    </tr>
+                                </table>
+                                <div class="payment-status">
+                                    <div>
+                                        <div class="label">Оплата</div>
+                                        Банковской картой
+                                    </div>
+                                    <div>
+                                        <div class="label">Статус оплаты</div>
+                                        <div class="text-success">Оплачено</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="ordered-products">
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod3.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod2.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod4.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="products-wrap">
+                                <div class="one-order-prod">
+
+                                </div>
+                            </div>
+
+                            <div class="bottom-order">
+                                <a href="#" class="js-hide-detail">
+                                    Свернуть детали
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="one-order">
+                        <a href="#" class="order-link js-order-link">
+                            <span class="order-num">
+                                <span class="label">№ Заказа:</span>
+                                463636
+                            </span>
+                            <span class="order-status">
+                                <span class="label">Статус:</span>
+                                Отправлен
+                            </span>
+                            <span class="order-date">
+                                <span class="label">Дата заказа:</span>
+                                2 августа 2018
+                            </span>
+                            <span class="order-total">
+                                <span class="label">4 товара</span>
+                                <b>на 970 AZN</b>
+                            </span>
+                        </a>
+                        <div class="order-info">
+                            <div class="order-info-descr">
+                                <table class="order-table">
+                                    <tr>
+                                        <td>Способ доставки</td>
+                                        <td>DHL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Город</td>
+                                        <td>Тбилиси</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Адрес</td>
+                                        <td>Алматинская, 2а</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Контактное лицо</td>
+                                        <td>Равшан</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Телефон</td>
+                                        <td>+7 495 676 65 54</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Стоиомсть доставки</td>
+                                        <td>25 000 руб.</td>
+                                    </tr>
+                                </table>
+                                <div class="payment-status">
+                                    <div>
+                                        <div class="label">Оплата</div>
+                                        Банковской картой
+                                    </div>
+                                    <div>
+                                        <div class="label">Статус оплаты</div>
+                                        <div class="text-success">Оплачено</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="ordered-products">
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod3.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod2.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="img-cont">
+                                            <img src="local/templates/main/img/content/prod4.jpg" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="prod-name">LTV-CCH-400, видеокамера</a>
+                                        <div class="vendor-code">Артикул поставщика: LTV-CCH-400</div>
+                                    </td>
+                                    <td>
+                                        9 000 руб.
+                                    </td>
+                                    <td>
+                                        1 шт.
+                                    </td>
+                                    <td>
+                                        <b>9 000  AZN</b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="products-wrap">
+                                <div class="one-order-prod">
+
+                                </div>
+                            </div>
+
+                            <div class="bottom-order">
+                                <a href="#" class="js-hide-detail">
+                                    Свернуть детали
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -1105,8 +1540,10 @@
 <script src="local/templates/main/js/main.js"></script>
 
 <script>
-    $('.datepicker').datepicker({
-        language: 'ru'
+    $('.input-daterange input').each(function() {
+        $(this).datepicker({
+            autoclose: true
+        });
     });
 </script>
 

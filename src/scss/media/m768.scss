@@ -495,5 +495,24 @@
       text-align: right;
       font-size: 11px;
     }
+    .page-title-wrap {
+      margin-top: -16px;
+      border-bottom: 1px solid #E8E8E8;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .show-on-page {
+      .show-time {
+        margin-left: auto;
+      }
+    }
+    .show-on-time {
+      width: 100%;
+      .form-control {
+        flex-grow: 0;
+      }
+    }
   }
 }

@@ -486,6 +486,9 @@
     .profile-nav {
       width: 190px;
     }
+    .profile-nav-wrap {
+      width: 190px;
+    }
     .profile-cont {
       width: calc(100% - 190px);
       padding: 32px 38px;
@@ -493,5 +496,31 @@
     .checkbox-form-group {
       width: auto;
     }
+    .ordered-products {
+      td {
+        padding: 5px;
+        font-size: 12px;
+        &:first-child {
+          padding: 10px 0;
+        }
+      }
+      .img-cont {
+        width: 80px;
+        height: 80px;
+      }
+      .prod-name {
+        font-size: 12px;
+      }
+      .vendor-code {
+        font-size: 12px;
+      }
+    }
+    .one-order {
+      .bottom-order {
+        padding: 12px;
+        justify-content: flex-end;
+      }
+    }
+
   }
 }

@@ -834,15 +834,65 @@
       margin-left: -15px;
       margin-right: -15px;
       width: calc( 100% + 30px );
-      & > .btn {
-
-      }
     }
     .form-group {
       width: 100%;
     }
     .checkbox-form-group {
       padding-left: 0;
+    }
+    .one-order {
+      .order-link {
+        flex-direction: column;
+        padding: 15px 13px;
+        b {
+          display: inline;
+        }
+        & > span {
+          margin-bottom: 13px;
+          width: 100%;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .label {
+          display: inline;
+        }
+      }
+      .order-total {
+        margin-left: 0;
+      }
+      .payment-status {
+        display: none;
+      }
+      .ordered-products {
+        tr {
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          padding: 24px 0 24px 85px ;
+        }
+        td {
+          width: 50%;
+          &:first-child {
+            position: absolute;
+            left: 0;
+          }
+          &:nth-child(2) {
+            width: 100%;
+          }
+          &:last-child {
+            width: 100%;
+            font-size: 18px;
+          }
+          .prod-name {
+            font-size: 14px;
+          }
+        }
+      }
+      .order-info-descr {
+
+      }
     }
   }
 }

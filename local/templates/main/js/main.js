@@ -389,4 +389,20 @@ $(document).ready(function(){
         }
     });
 
+    $('.js-order-link').on('click', function(e){
+        e.preventDefault();
+        $(this).closest('.one-order').addClass('show');
+        $(this).closest('.one-order').find('.order-info').slideDown();
+    });
+
+    $('.js-hide-detail').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.one-order').addClass('show');
+        $(this).closest('.one-order').find('.order-info').slideUp();
+    });
+
+    $('.js-show-time').on('click', function (e) {
+        $('.js-order-daterange').toggle();
+    });
+
 });
