@@ -1,0 +1,56 @@
+.text-page {
+  overflow-x: hidden;
+  & > .cont {
+    padding-top: 25px;
+    padding-bottom: 100px;
+  }
+  .breadcrumb {
+    margin-bottom: 16px;
+  }
+  .page-title {
+    margin-bottom: 15px;
+  }
+  .text-container {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333333;
+    .conclusion {
+      background: #EFEEEA;
+      padding: 30px 50px;
+      margin-bottom: 30px;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    p {
+      margin-bottom: 34px;
+      &:after {
+        content: "";
+        visibility: hidden;
+        display: block;
+        clear: both;
+        height: 0;
+      }
+    }
+    .left-float {
+      float: left;
+      width: 245px;
+      color: #707070;
+      font-size: 16px;
+      line-height: 26px;
+      margin-right: 20px;
+      p {
+        margin-bottom: 0;
+      }
+      .h1 {
+        color: #333333;
+      }
+    }
+  }
+
+
+
+  .table {
+    margin-bottom: 30px;
+  }
+}

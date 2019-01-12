@@ -895,4 +895,56 @@
       }
     }
   }
+  .text-page {
+    .page-title {
+      font-size: 18px;
+    }
+    .text-container {
+      font-size: 14px;
+      line-height: 22px;
+      .conclusion {
+        padding: 20px 25px;
+      }
+      .left-float {
+        font-size: 14px;
+        line-height: 22px;
+        float: none;
+        width: 100%;
+        margin-bottom: 22px;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      p {
+        margin-bottom: 18px;
+      }
+    }
+    .h1 {
+      font-size: 18px;
+    }
+  }
+  .text-page-slider {
+    width: 100%;
+    margin-left: 0;
+    .slick-arrow {
+      //display: none !important;
+    }
+    .item-page {
+      width: 100vw;
+      max-width: none;
+      opacity: 1;
+      filter: grayscale(0%);
+      transition: all .0s ease-out;
+    }
+    .next-arrow {
+      margin-right: 0;
+      right: 5px;
+      margin-top: -15px;
+    }
+    .prev-arrow {
+      margin-left: 0;
+      left: 5px;
+      margin-top: -15px;
+    }
+  }
 }

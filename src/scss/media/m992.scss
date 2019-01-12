@@ -521,6 +521,23 @@
         justify-content: flex-end;
       }
     }
-
+  }
+  .text-page {
+    & > .cont {
+      padding-top: 13px;
+    }
+  }
+  .text-page-slider {
+    margin-left: calc(379px - 50vw);
+    .prev-arrow {
+      margin-left: -355px;
+    }
+    .next-arrow {
+      margin-right: -355px;
+    }
+    .item-page {
+      width: 758px;
+      max-width: 758px;
+    }
   }
 }

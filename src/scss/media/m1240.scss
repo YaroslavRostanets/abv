@@ -164,4 +164,20 @@
       }
     }
   }
+  .text-page-slider {
+    margin-left: calc(475px - 50vw);
+    .prev-arrow {
+      margin-left: -450px;
+    }
+    .next-arrow {
+      margin-right: -450px;
+    }
+    .item-page {
+      width: 950px;
+      max-width: 950px;
+    }
+  }
+  .text-page {
+
+  }
 }

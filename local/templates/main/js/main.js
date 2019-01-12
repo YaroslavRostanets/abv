@@ -405,4 +405,21 @@ $(document).ready(function(){
         $('.js-order-daterange').toggle();
     });
 
+
+    /*-- Текстовая страница --*/
+
+    $('.js-text-page-slider').slick({
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+        prevArrow: '<a href=# class="slick-arrow prev-arrow">&#xe809</a>',
+        nextArrow: '<a href=# class="slick-arrow next-arrow">&#xe807</a>',
+        responsive: {
+            breakpoint: 540,
+            settings: {
+                variableWidth: false
+            }
+        }
+    });
+
 });

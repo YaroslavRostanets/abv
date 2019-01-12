@@ -515,4 +515,22 @@
       }
     }
   }
+  .table-wrap {
+    overflow-x: auto;
+    .text-table {
+      min-width: 768px;
+    }
+  }
+  .text-page-slider {
+    margin-left: calc(255px - 50vw);
+    .item-page {
+      width: 540px;
+      max-width: 540px;
+    }
+  }
+  .text-page {
+    & > .cont {
+      padding-top: 0;
+    }
+  }
 }

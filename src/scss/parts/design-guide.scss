@@ -5,11 +5,11 @@ body {
   font-size: 14px;
   color: #333333;
 }
-h1 {
+h1, .h1 {
   font-size: 22px;
   font-family: 'Proxima Nova Bold';
 }
-h2 {
+h2, .h2 {
   font-size: 18px;
   font-family: 'Proxima Nova Bold';
 }
@@ -414,6 +414,9 @@ select {
     &:nth-child(even){
       background: #FCFCFC;
     }
+  }
+  b {
+    font-family: 'Proxima Nova Bold';
   }
 }
 .video-wrap {
@@ -928,4 +931,40 @@ body {
   select {
     display: none;
   }
+}
+.text-page-slider {
+  width: 100vw;
+  margin-left: calc( 602px - 50vw );
+  margin-bottom: 34px;
+  .prev-arrow {
+    top: 50%;
+    left: 50%;
+    margin-left: -680px;
+    right: auto;
+  }
+  .next-arrow {
+    top: 50%;
+    margin-right: -680px;
+    left: auto;
+    right: 50%;
+  }
+  .item-page {
+    margin: 0 10px;
+    width: 1204px;
+    max-width: 1204px;
+    opacity: 0.4;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-out;
+    &.slick-current {
+      opacity: 1;
+      filter: grayscale(0%);
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.text-table {
+
 }
