@@ -899,28 +899,28 @@
     .page-title {
       font-size: 18px;
     }
-    .text-container {
-      font-size: 14px;
-      line-height: 22px;
-      .conclusion {
-        padding: 20px 25px;
-      }
-      .left-float {
-        font-size: 14px;
-        line-height: 22px;
-        float: none;
-        width: 100%;
-        margin-bottom: 22px;
-        p {
-          margin-bottom: 0;
-        }
-      }
-      p {
-        margin-bottom: 18px;
-      }
-    }
     .h1 {
       font-size: 18px;
+    }
+  }
+  .text-container {
+    font-size: 14px;
+    line-height: 22px;
+    .conclusion {
+      padding: 20px 25px;
+    }
+    .left-float {
+      font-size: 14px;
+      line-height: 22px;
+      float: none;
+      width: 100%;
+      margin-bottom: 22px;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    p {
+      margin-bottom: 18px;
     }
   }
   .text-page-slider {

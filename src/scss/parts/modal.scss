@@ -79,39 +79,7 @@
       right: -30px;
     }
   }
-  .fb-button {
-    background: #3D5999;
-    color: #FFFFFF;
-    position: relative;
-    &:before {
-      content: "\f09a";
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      height: 31px;
-      width: 11px;
-      font-size: 20px;
-      color: #FFFFFF;
-      font-family: "fontello";
-    }
-  }
-  .google-button {
-    background: #D52023;
-    color: #FFFFFF;
-    position: relative;
-    &:before {
-      content: "\e813";
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      height: 25px;
-      font-size: 16px;
-      color: #FFFFFF;
-      font-family: "fontello";
-    }
-  }
+
   #partner-tab {
     padding-bottom: 37px;
   }

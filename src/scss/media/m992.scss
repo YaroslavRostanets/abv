@@ -220,7 +220,6 @@
   }
   .brands-page {
     & > .cont {
-      padding-top: 14px;
       padding-bottom: 70px;
     }
     .breadcrumb {
@@ -373,9 +372,6 @@
     }
   }
   .search-page, .wishlist-page {
-    & > .cont {
-      padding-top: 14px;
-    }
     .breadcrumb {
       margin-bottom: 9px;
     }
@@ -429,18 +425,17 @@
       }
     }
   }
-  .checkout-page {
+  .page {
     & > .cont {
       padding-top: 15px;
     }
+  }
+  .checkout-page {
     .address-group {
       width: 100%;
     }
   }
   .comparison-page {
-    & > .cont {
-      padding-top: 16px;
-    }
     .breadcrumb {
       margin-bottom: 10px;
     }
