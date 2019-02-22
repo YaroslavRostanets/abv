@@ -168,6 +168,7 @@
   }
   .price-buy {
     display: flex;
+    margin-bottom: 25px;
     .btn-std {
       font-size: 14px;
       padding-left: 38px;
@@ -184,6 +185,12 @@
         font-size: 22px;
       }
     }
+  }
+  .buy-one-click {
+    font-size: 14px;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-right: 20px;
   }
   .nav-pills {
     width: 100%;
@@ -210,20 +217,21 @@
   }
   .table {
     td {
-      width: 50%;
-      padding-left: 17px;
-      padding-right: 17px;
+      text-align: left;
+      padding: 12px 25px;
+      vertical-align: middle;
       &:first-child {
+        width: 10%;
         text-align: right;
+      }
+      &:last-child {
+        font-weight: 700;
       }
     }
     th {
-      width: 50%;
-      padding-left: 17px;
-      padding-right: 17px;
-      &:first-child {
-        text-align: right;
-      }
+      padding-left: 25px;
+      padding-right: 25px;
+      text-align: left;
     }
   }
   .description-text {

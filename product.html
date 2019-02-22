@@ -670,6 +670,9 @@
                         <div class="price">9 000 AZN</div>
                     </div>
                 </div>
+                <button href="#" class="btn btn-std buy-one-click" data-toggle="modal" data-target="#buy-one-click">
+                    Купить в 1 клик
+                </a>
             </div>
         </div>
 
@@ -710,10 +713,10 @@
                         </a>
                     </div>
                     <table class="table">
-                        <tr>
-                            <th>Наименование</th>
-                            <th>Значение</th>
-                        </tr>
+<!--                         <tr>
+    <th>Наименование</th>
+    <th>Значение</th>
+</tr> -->
                         <tr>
                             <td>Обеъм</td>
                             <td>3 Тб</td>
@@ -1361,6 +1364,34 @@
 </div>
 <!-- конец Авторизация модалка -->
 
+<!-- Купить в 1 клик модалка -->
+<div class="modal fade" id="buy-one-click" tabindex="-1" role="dialog"aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="#">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Имя">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control js-phone-mask" placeholder="Телефон">
+        </div>
+        <script>
+            jQuery(function($){
+               $(".js-phone-mask").mask("(999) 999-9999");
+               });
+        </script>
+        <div class="cont-for-capcha">
+            <img src="https://www.a2hosting.com/blog/content/uploads/2017/02/image01-1.png" alt="">
+        </div>
+        <button class="btn btn-std">
+            Перезвонить
+        </button>
+    </form>
+    </div>
+  </div>
+</div>
+<!-- конец Купить в 1 клик модалка -->
+<script src="local/templates/main/libs/jquery.maskedinput.min.js"></script>
 <script src="local/templates/main/libs/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="local/templates/main/libs/slick/slick.min.js"></script>
 <script src="local/templates/main/libs/formstyler/jquery.formstyler.min.js"></script>

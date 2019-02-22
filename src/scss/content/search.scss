@@ -57,6 +57,8 @@
     border-top: 1px solid #E8E8E8;
     border-bottom: 1px solid #E8E8E8;
     min-height: 50px;
+    padding-right: 30px;
+    margin-bottom: 0;
     .label {
       margin-right: 10px;
     }
@@ -76,5 +78,30 @@
     .dropdown-item {
       text-decoration: none;
     }
+  }
+  .page-title {
+    margin-bottom: 31px;
+  }
+  .one-product {
+    padding-right: 20px;
+    .img-cont {
+      width: 185px;
+    }
+  }
+  .product-descr {
+    .right-part {
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+  }
+  .stickers-wrap {
+    padding-left: 0;
+  }
+  .remove-wishlist {
+    font-size: 12px;
+    color: #363636;
+  }
+  .price {
+    margin-bottom: 6px;
   }
 }

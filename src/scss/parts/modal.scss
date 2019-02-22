@@ -154,3 +154,42 @@
     }
   }
 }
+#buy-one-click {
+  padding-right: 17px;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  padding-right: 0 !important;
+  .modal-content {
+    padding: 30px 20px;
+  }
+  .modal-dialog {
+    max-width: 360px;
+  }
+  .cont-for-capcha {
+    margin-bottom: 25px;
+    max-width: 220px;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .btn-std {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  #buy-one-click {
+    width: 100%;
+    .modal-dialog {
+      width: 90%;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
