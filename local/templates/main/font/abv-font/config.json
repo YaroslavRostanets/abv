@@ -459,6 +459,18 @@
       "css": "user-1",
       "code": 59422,
       "src": "iconic"
+    },
+    {
+      "uid": "744a71fe4b5ab7c4f4b7cd598e9bf75a",
+      "css": "window",
+      "code": 59423,
+      "src": "entypo"
+    },
+    {
+      "uid": "e7eecc3cc44f3f4cad6229b202588308",
+      "css": "calendar-plus-o",
+      "code": 62065,
+      "src": "fontawesome"
     }
   ]
 }

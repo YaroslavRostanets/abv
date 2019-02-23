@@ -246,9 +246,16 @@
     margin-left: -35px;
     margin-right: -35px;
     margin-top: 40px;
+    .slick-list {
+      min-width: 100%;
+    }
+    .slick-track {
+      min-width: 100%;
+    }
   }
   .one-accessory {
     width: 184px;
+    min-width: 180px;
     margin: 0 35px;
     .img-cont {
       display: flex;

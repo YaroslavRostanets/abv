@@ -30,5 +30,7 @@
 .icon-master-card:before { content: '\e81c'; } /* '' */
 .icon-wallet:before { content: '\e81d'; } /* '' */
 .icon-user-1:before { content: '\e81e'; } /* '' */
+.icon-window:before { content: '\e81f'; } /* '' */
 .icon-facebook-1:before { content: '\f09a'; } /* '' */
 .icon-sliders:before { content: '\f1de'; } /* '' */
+.icon-calendar-plus-o:before { content: '\f271'; } /* '' */
