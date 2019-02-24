@@ -535,4 +535,71 @@
       max-width: 758px;
     }
   }
+  header {
+    .header-top {
+      .center-part {
+        .address {
+          margin-left: 0;
+        }
+      } 
+      .btns-wrap {
+        .balance {
+          font-size: 0;
+          .red {
+            font-size: 13px;
+            white-space: nowrap;
+          }
+        }
+      } 
+    } 
+  } 
+  .b2b-page {
+    .aside {
+      margin-top: 25px;
+      padding-right: 10px;
+    }
+    .top-part {
+      margin-bottom: 10px;
+    }
+    .one-prod {
+      padding-left: 0px;
+      padding-top: 14px;
+      .left-part {
+        align-items: flex-start;
+      }
+      .img-cont {
+        margin-right: 9px;
+      }
+      .prod-name {
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+      .prod-name-wrap {
+        padding-top: 9px;
+      }
+      .vendor-code {
+        font-size: 11px;
+      }
+      .prod-info-wrap {
+        margin-bottom: 18px;
+      }
+      .add-to-confirm {
+        margin-right: 6px;
+      }
+      .add-to-wish {
+        margin-right: 6px;
+      }
+      .right-part {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .price-wrap {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+      .price {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

@@ -177,4 +177,49 @@
       max-width: 950px;
     }
   }
+  header {
+    .header-top {
+      .center-part {
+        margin-right: 0;
+      }
+      .btns-wrap {
+        .balance {
+          margin-right: 10px;
+          font-size: 13px;
+        }
+      } 
+    } 
+  }
+  .b2b-page {
+    .top-ctrl {
+      .sort {
+        .label {
+          display: none;
+        }
+      }
+      .view-on-page {
+        display: none;
+      }
+      .show-on-page {
+        .label {
+          display: none;
+        }
+      }
+    }
+    .one-prod {
+      .img-cont {
+        margin-right: 20px;
+      }
+      .prod-name {
+        font-size: 16px;
+      }
+      .prod-info-wrap {
+        width: 255px;
+        margin-bottom: 10px;
+      }
+      .prod-name-wrap {
+        flex-wrap: wrap;
+      }
+    } 
+  } 
 }
