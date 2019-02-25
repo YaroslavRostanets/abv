@@ -511,6 +511,15 @@ select {
     background-repeat: no-repeat;
   }
 }
+input[type="number"] {
+  border: 1px solid #E8E8E8;
+  height: 36px;
+  width: 70px;
+  position: relative;
+  border-radius: 4px;
+  padding: 0 5px;
+  text-align: center;
+}
 .jq-number {
   border: 1px solid #E8E8E8;
   height: 36px;
@@ -776,6 +785,9 @@ body {
       width: 100px;
     }
     .jq-number {
+      margin-left: 13px;
+    }
+    input[type="number"] {
       margin-left: 13px;
     }
   }

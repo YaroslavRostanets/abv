@@ -149,4 +149,53 @@
 	.content-part {
 		padding-top: 14px;
 	}
+	.one-product {
+		.btn.added {
+			.hover {
+				display: none;
+			}
+			&:hover {
+				span {
+					display: none;
+				}
+				.hover {
+					display: inline;
+				}
+			}
+		}
+		.small-price {
+			display: flex;
+			justify-content: flex-end;
+			font-size: 12px;
+			color: #757576;
+		}
+		.price-wrap {
+			text-align: right;
+		}
+		b {
+			font-weight: 700;
+			margin-left: 5px;
+		}
+		.add-to-wish {
+			color: #F89B3F;
+		}
+	}
+	.title-ctrl {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 23px;
+	}
+	.project-wrap {
+		.table-total {
+			text-align: right;
+		}
+		.table {
+			.prod {
+				color: #333333;
+			}
+		}
+		.remove {
+			color: #333333;
+		}
+	}
 }
