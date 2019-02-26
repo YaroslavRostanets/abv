@@ -471,6 +471,12 @@
       "css": "calendar-plus-o",
       "code": 62065,
       "src": "fontawesome"
+    },
+    {
+      "uid": "4ba33d2607902cf690dd45df09774cb0",
+      "css": "plus-circled",
+      "code": 59424,
+      "src": "fontawesome"
     }
   ]
 }
