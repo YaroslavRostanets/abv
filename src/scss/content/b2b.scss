@@ -189,10 +189,16 @@
 		}
 	}
 	.project-wrap {
+		&.show-all {
+			tr {
+				display: table-row !important;
+			}
+		}
 		.table-total {
 			text-align: right;
 			font-size: 15px;
 			margin-bottom: 26px;
+			margin-top: 15px;
 			& > div {
 				margin-bottom: 8px;
 				&:last-child {
@@ -204,6 +210,7 @@
 			}
 		}
 		.table {
+			margin-bottom: 0;
 			.prod {
 				color: #333333;
 			}
@@ -240,6 +247,18 @@
 				transform: translateY(-50%);
 			}
 		}
+	}
+	.load-more {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 60px;
+		background: #F7F7F7;
+		color: #333333;
+		text-decoration: none;
+		font-size: 13px;
+		cursor: pointer;
 	}
 	.add-position {
 		.title {
@@ -302,16 +321,92 @@
 			}
 		}
 		.prod-name {
-			color: #333333;
+			position: relative;
+			display: inline-block;
+			&:hover {
+				.info-cont {
+					display: flex;
+				}
+			}
 			.demo-icon {
 				color: #DCDCDC;
 				font-size: 20px;
 				margin-right: 10px;
 			}
+			a {
+				color: #333333;
+			}
 		}
 		.remove {
 			font-size: 12px;
 			color: #8C8C8C;
+		}
+		.info-cont {
+			display: none;
+			position: absolute;
+			z-index: 2;
+			top: -31px;
+			left: 100%;
+			background: #FFFFFF;
+			width: 500px;
+			border-radius: 6px;
+			box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+			padding: 33px 25px 25px 25px;
+			&:before {
+				content: "";
+				position: absolute;
+				left: -23px;
+    			border: 12px solid transparent;
+    			border-right: 12px solid #FFFFFF;
+			}
+			.img-cont {
+				display: block;
+				width: 110px;
+				min-width: 110px;
+				height: 110px;
+				margin-right: 28px;
+				img {
+					display: block;
+					max-width: 100%;
+				}
+			}
+			.vendor-code {
+				margin-bottom: 22px;
+			}
+			.info-wrap {
+				flex-grow: 1;
+			}
+			.prod-link {
+				text-decoration: none;
+	    		font-size: 18px;
+	    		margin-bottom: 13px;
+	    		display: inline-block;
+			}
+			.info-description {
+				line-height: 21px;
+			}
+			.bottom {
+				border-top: 1px solid #FCFCFB;
+				display: flex;
+				justify-content: space-between;
+				padding-top: 20px;
+				margin-top: 40px;
+				.btn {
+					font-size: 14px;
+    				min-width: 115px;
+				}
+			}
+			.price {
+				font-size: 20px;
+   			 	font-weight: 700;
+   			 	margin-bottom: 4px;
+			}
+			.bot-price {
+				text-align: right;
+			}
+			.small-price {
+				font-size: 11px;
+			}
 		}
 	}
 }

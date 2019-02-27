@@ -422,4 +422,19 @@ $(document).ready(function(){
         }
     });
 
+    $('[data-toggle="tooltip"]').tooltip({
+        animated: 'fade',
+        placement: 'bottom',
+        trigger: 'click',
+        delay: { hide: 100 }
+    });
+
+    $(document).on('show.bs.tooltip', function (e) {
+          setTimeout(function() {   //calls click event after a certain time
+           $('[data-toggle="tooltip"]').tooltip('hide');
+        }, 2000);
+    });
+
+    $( '.swipebox' ).swipebox();
+
 });
