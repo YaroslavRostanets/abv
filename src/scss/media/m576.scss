@@ -1013,6 +1013,106 @@
     .currency {
       display: none;
     }
+    .roll-up {
+      display: none;
+    }
+    .title {
+      font-size: 18px;
+    }
+    .content-part {
+      padding-top: 25px;
+    }
+    .prod-cont {
+      margin-left: -15px;
+      margin-right: -15px;
+      width: auto;
+      margin-bottom: 25px;
+      table {
+        tr {
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          padding-bottom: 10px;
+          &:first-child {
+            padding-bottom: 0;
+            th {
+              display: none;
+            }
+            th:nth-child(1) {
+              width: 100%;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+        td {
+          padding: 0 5px;
+          min-height: 0;
+          &:first-child {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          &:nth-child(5) {
+            margin-right: auto;
+            margin-left: 15px;
+          }
+        }
+        .remove {
+          position: absolute;
+          right: 14px;
+          top: 13px;
+        }
+        .tablet-stripe {
+          display: flex;
+          justify-content: space-between;
+          & > div {
+            margin-right: 0;
 
+          }
+        }
+        .mobile-label {
+
+        }
+      }
+    }
+    .project-wrap {
+      .table-total {
+        text-align: left;
+        font-size: 14px;
+        padding: 0 15px;
+      }
+      .project-bottom {
+        flex-wrap: wrap;
+        padding: 0 15px;
+        .btn-wrap {
+          flex-wrap: wrap;
+          display: flex;
+          flex-direction: column-reverse;
+          width: 100%;
+        }
+        .btn {
+          width: 100%;
+          max-width: 320px;
+          margin-bottom: 10px;
+          &:first-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .add-pos {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    }
+    .add-position {
+      margin-left: -15px;
+      margin-right: -15px;
+      .title {
+        font-size: 14px;
+      }
+      .search {
+        padding: 16px 15px;
+      }
+    }
   }
 }

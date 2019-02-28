@@ -183,9 +183,21 @@
 	.title-ctrl {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		margin-bottom: 23px;
 		.roll-up {
 			color: #333333;
+			cursor: pointer;
+			&:after {
+				content: "\e818";
+				font-family: "fontello";
+				margin-left: 3px;
+			}
+			&.open {
+				&:after {
+					content: "\e819";
+				}
+			}
 		}
 	}
 	.project-wrap {
@@ -300,6 +312,18 @@
 		background: #FCFCFC;
 		font-size: 13px;
 		tr {
+			&.active {
+				background: #F0EFF0;
+				.icon-plus-circled {
+					color: #F9A234;
+				}
+			}
+			&.added {
+				background: #F0EFF0;
+				.icon-plus-circled {
+					color: #363636;
+				}
+			}
 			th {
 				padding: 20px 10px;
 				&:first-child {
@@ -327,6 +351,9 @@
 			position: relative;
 			display: inline-block;
 			&:hover {
+				& > a {
+					color: #F9AB56;
+				}
 				.info-cont {
 					display: flex;
 				}
@@ -410,6 +437,20 @@
 			.small-price {
 				font-size: 11px;
 			}
+		}
+	}
+	.bot-btn-wrap {
+		padding: 13px 20px 35px 25px;
+		background: #FCFCFC;
+		.btn {
+			font-size: 14px;
+			margin-right: 4px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		.btn-light {
+			background: #FFFFFF;
 		}
 	}
 }

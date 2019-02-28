@@ -453,6 +453,7 @@ $(document).ready(function(){
         $(this).attr('data-variant', $(this).text());
         $(this).text(variant);
         $('.project-wrap').toggleClass('show-all');
+        $(this).toggleClass('open');
     });
 
     $('.js-load-more').on('click', function(){

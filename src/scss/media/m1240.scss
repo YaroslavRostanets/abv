@@ -188,8 +188,13 @@
           font-size: 13px;
         }
       } 
-    } 
-  }
+    }
+    .header-middle {
+      .search-wrap {
+        width: 425px;
+      }
+    }
+  }  
   .b2b-page {
     .top-ctrl {
       .sort {
@@ -220,6 +225,22 @@
       .prod-name-wrap {
         flex-wrap: wrap;
       }
+    }
+    .prod-cont {
+      table {
+        th {
+          font-size: 12px;
+        }
+      }
+    }
+    .add-pos-table {
+      tr {
+        td {
+          &:last-child {
+            padding-right: 10px;
+          }
+        }
+      } 
     } 
   } 
 }
