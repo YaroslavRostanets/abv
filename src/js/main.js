@@ -430,11 +430,36 @@ $(document).ready(function(){
     });
 
     $(document).on('show.bs.tooltip', function (e) {
-          setTimeout(function() {   //calls click event after a certain time
+          setTimeout(function() {
            $('[data-toggle="tooltip"]').tooltip('hide');
         }, 2000);
     });
 
     $( '.swipebox' ).swipebox();
+
+
+    $('.js-hidden-rows').each(function(i, item){
+        var show = $(item).attr('data-show');
+
+        $(item).find('tr').each(function(i, item){
+            if(i > show) {
+                $(item).hide();
+            }
+        });
+    });
+
+    $('.js-roll-up').on('click', function(){
+        var variant = $(this).attr('data-variant');
+        $(this).attr('data-variant', $(this).text());
+        $(this).text(variant);
+        $('.project-wrap').toggleClass('show-all');
+    });
+
+    $('.js-load-more').on('click', function(){
+        //$(this).closest('.project-wrap').addClass('show-all');
+        $('.js-roll-up').click();
+    });
+
+
 
 });
