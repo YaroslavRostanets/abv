@@ -1103,6 +1103,11 @@
         display: inline-block;
         margin-bottom: 20px;
       }
+      .table {
+        .mobile-label {
+          display: inline;
+        }
+      } 
     }
     .add-position {
       margin-left: -15px;
@@ -1112,6 +1117,63 @@
       }
       .search {
         padding: 16px 15px;
+      }
+    }
+    .add-pos-table {
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .mobile-label {
+          font-size: 12px;
+        }
+        &:first-child {
+          display: none;
+        }
+        td {
+          padding: 0;
+          &:first-child {
+            width: 100%;
+            padding-left: 12px;
+            margin-bottom: 9px;
+          }
+          &:nth-child(2) {
+            margin-left: 44px;
+          }
+          &:nth-child(3) {
+            margin-left: auto;
+            margin-right: 15px;
+          }
+          &:nth-child(4) {
+            width: 100%;
+            padding-left: 44px;
+            padding-top: 10px;
+            display: none;
+          }
+          &:last-child {
+            display: none;
+          }
+        }
+        &.active, 
+        &.added {
+          td {
+            &:nth-child(4) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .bot-btn-wrap {
+      display: flex;
+      flex-direction: column;
+      .btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
