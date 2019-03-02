@@ -32,6 +32,10 @@
 .icon-user-1:before { content: '\e81e'; } /* '' */
 .icon-window:before { content: '\e81f'; } /* '' */
 .icon-plus-circled:before { content: '\e820'; } /* '' */
+.icon-upload:before { content: '\e821'; } /* '' */
+.icon-mail:before { content: '\e822'; } /* '' */
+.icon-print:before { content: '\e823'; } /* '' */
 .icon-facebook-1:before { content: '\f09a'; } /* '' */
 .icon-sliders:before { content: '\f1de'; } /* '' */
+.icon-calc:before { content: '\f1ec'; } /* '' */
 .icon-calendar-plus-o:before { content: '\f271'; } /* '' */
