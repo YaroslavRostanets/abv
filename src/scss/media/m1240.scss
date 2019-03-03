@@ -163,6 +163,31 @@
         }
       }
     }
+    .profile-project-cont {
+      .table {
+        th {
+          font-size: 12px;
+          padding: 18px 2px;
+        }
+        td {
+          padding: 23px 2px;
+          &:first-child {
+            padding-left: 20px;
+          }
+        }
+      }
+      .sel-wrap {
+        .jq-selectbox {
+          width: 180px;
+        }
+      }
+      .links-wrap {
+        margin-bottom: 20px;
+      }
+      .bottom-container {
+        flex-wrap: wrap;
+      }
+    }
   }
   .text-page-slider {
     margin-left: calc(475px - 50vw);
@@ -242,5 +267,5 @@
         }
       } 
     } 
-  } 
+  }
 }

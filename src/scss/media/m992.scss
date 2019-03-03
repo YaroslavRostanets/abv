@@ -479,13 +479,13 @@
       padding-top: 13px;
     }
     .profile-nav {
-      width: 190px;
+      width: 220px;
     }
     .profile-nav-wrap {
-      width: 190px;
+      width: 220px;
     }
     .profile-cont {
-      width: calc(100% - 190px);
+      width: calc(100% - 220px);
       padding: 32px 38px;
     }
     .checkbox-form-group {
@@ -516,6 +516,37 @@
         justify-content: flex-end;
       }
     }
+    .profile-project-cont {
+      .table {
+        .prod {
+          width: 110px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+          padding-right: 5px;
+          .img-cont {
+            display: none;
+          }
+        }
+      }
+      .bottom-part {
+        flex-direction: column-reverse;
+      }
+      .sel-wrap {
+        .jq-selectbox {
+          width: 50%;
+        }
+      }
+      .links-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a {
+          margin-right: 0;
+        }
+      } 
+    } 
   }
   .text-page {
     & > .cont {

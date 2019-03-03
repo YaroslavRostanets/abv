@@ -540,7 +540,7 @@
 
             <div class="profile-nav-wrap dropdown">
                 <a class="btn btn-secondary dropdown-toggle" id="profile-menu" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Личные данные
+                    Настройки представления
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="proifle-menu">
@@ -778,13 +778,23 @@
                         <div class="sum">Сумма проекта: 320$</div>
                         <div class="m-8">Закупочная цена: 160$</div>
                         <div class="m-11">Профит: 160$</div>
-                        <div class="proc-dis">% Скидки 0%</div>
-                        <a href="#" class="calculate-discont">Расчитать скидку</a>
+                        <div class="proc-dis">
+                            <input type="text" value="10%">
+                            <span>% Скидки 0%</span>
+                        </div>
+                        <a class="calculate-discont js-calculate-discont">Расчитать скидку</a>
+                        <script>
+                            $(document).ready(function(){
+                                $('.js-calculate-discont').on('click', function(){
+                                    $('.discount').toggleClass('show');
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="bottom-container">
                     <div class="links-wrap">
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#upload-file">
                             <i class="demo-icon icon-upload"></i>
                             Загрузить файл
                         </a>
@@ -1207,6 +1217,62 @@
     </div>
 </div>
 <!-- конец Авторизация модалка -->
+
+<!-- модалка Загрузить файл -->
+<div class="modal fade" id="upload-file" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="upload-block">
+                <a href="#" class="upload-link">
+                    <i class="demo-icon icon-plus-circled"></i>
+                    <span class="underline">Загрузить фото</span>
+                    <span>file.jpg</span>
+                </a>
+                <div class="title-com">
+                    <div class="title">
+                        Загрузите лого или выберите
+                        из уже загруженных ранее
+                    </div>
+                    <div class="com">
+                        Размер файла не должен превышать 2mb
+                    </div>
+                </div>
+            </div>
+            <div class="loaded-logos">
+                <a href="#" class="one-logo">
+                    <img src="local/templates/main/img/content/b2.png" alt="">
+                </a>
+                <a href="#" class="one-logo active">
+                    <img src="local/templates/main/img/content/b1.png" alt="">
+                </a>
+                <a href="#" class="one-logo">
+                    <img src="local/templates/main/img/content/b1.png" alt="">
+                </a>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $('.one-logo').on('click', function(e){
+                        e.preventDefault();
+                        $(this).siblings().removeClass('active');
+                        $(this).addClass('active');
+                    });
+                });
+            </script>
+            <div class="btns-wrap">
+                <a href="#" class="btn-std btn">
+                    Подтвердить
+                </a>
+                <a href="#" class="btn-gray btn">
+                    Отмена
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- конец модалка Загрузить файл -->
 
 <script src="local/templates/main/libs/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="local/templates/main/libs/slick/slick.min.js"></script>
