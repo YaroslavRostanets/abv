@@ -830,6 +830,7 @@
     }
   }
   .profile-page {
+    overflow-x: hidden; 
     .profile-project-cont {
       padding: 25px 0 0;
       overflow: visible;
@@ -858,6 +859,7 @@
           width: auto;
           display: inline-block;
           margin-bottom: 10px;
+          max-width: 290px;
         }
         tr {
           display: flex;
@@ -898,6 +900,9 @@
             margin-right: auto;
             margin-left: 15px;
           }
+          &:nth-child(6) {
+            //margin-right: 20px;
+          }
         }
         .remove {
           position: absolute;
@@ -908,6 +913,7 @@
         .tablet-stripe {
           display: flex;
           justify-content: space-between;
+          max-width: 260px;
           & > div {
             margin-right: 0;
 
@@ -1263,6 +1269,7 @@
         padding-bottom: 10px;
         .mobile-label {
           font-size: 12px;
+          display: inline;
         }
         &:first-child {
           display: none;

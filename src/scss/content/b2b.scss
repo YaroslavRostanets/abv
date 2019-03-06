@@ -317,6 +317,9 @@
 		border-top: 1px solid #F5F5F5;
 		background: #FCFCFC;
 		font-size: 13px;
+		.mobile-label {
+			display: none;
+		}
 		tr {
 			&.active {
 				background: #F0EFF0;
