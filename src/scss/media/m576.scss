@@ -1320,4 +1320,26 @@
       }
     }
   }
+  .news-page {
+    .one-news {
+      flex-wrap: wrap;
+    }
+    .news-img {
+      width: 100%;
+      height: 300px;
+    }
+    .news-info {
+      padding-left: 0;
+      width: 100%;
+    }
+    .page-title {
+      margin-top: 15px;
+    }
+    .news-img {
+      img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+    }
+  }
 }
