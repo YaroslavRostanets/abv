@@ -584,7 +584,7 @@
                         </div>
                         <div class="date">19 октября, Москва</div>
                     </div>
-                    <a href="#" class="btn-std btn">
+                    <a href="#" data-toggle="modal" data-target="#book-place" class="btn-std btn">
                         Забронировать место
                     </a>
                 </div>
@@ -607,7 +607,7 @@
                         </div>
                         <div class="date">19 октября, Москва</div>
                     </div>
-                    <a href="#" class="btn-std btn">
+                    <a href="#" data-toggle="modal" data-target="#book-place" class="btn-std btn">
                         Забронировать место
                     </a>
                 </div>
@@ -630,7 +630,7 @@
                         </div>
                         <div class="date">19 октября, Москва</div>
                     </div>
-                    <a href="#" class="btn-std btn">
+                    <a href="#" data-toggle="modal" data-target="#book-place" class="btn-std btn">
                         Забронировать место
                     </a>
                 </div>
@@ -653,7 +653,7 @@
                         </div>
                         <div class="date">19 октября, Москва</div>
                     </div>
-                    <a href="#" class="btn-std btn">
+                    <a href="#" data-toggle="modal" data-target="#book-place" class="btn-std btn">
                         Забронировать место
                     </a>
                 </div>
@@ -676,7 +676,7 @@
                         </div>
                         <div class="date">19 октября, Москва</div>
                     </div>
-                    <a href="#" class="btn-std btn">
+                    <a href="#" data-toggle="modal" data-target="#book-place" class="btn-std btn">
                         Забронировать место
                     </a>
                 </div>
@@ -699,7 +699,7 @@
                         </div>
                         <div class="date">19 октября, Москва</div>
                     </div>
-                    <a href="#" class="btn-std btn">
+                    <a href="#" data-toggle="modal" data-target="#book-place" class="btn-std btn">
                         Забронировать место
                     </a>
                 </div>
@@ -918,6 +918,41 @@
     </div>
 </footer>
 
+<!-- модалка Забронировать место -->
+<div class="modal fade" id="book-place" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Забронировать место</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="e-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Телефон">
+                    </div>
+                    <div class="form-group flex">
+                        <div class="label">Кол-во мест:</div>
+                        <input class="form-control" type="number">
+                    </div>
+                    <button href="#" class="btn-std btn">
+                        Заказать
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- конец модалка Забронировать место -->
+
 <!-- Авторизация модалка -->
 
 <!-- Modal -->
@@ -925,7 +960,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+                <h5 class="modal-title">Авторизация</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

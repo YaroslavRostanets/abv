@@ -303,3 +303,23 @@
     top: 5px;
   }
 }
+#book-place {
+  .form-group.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    .label {
+      margin-right: 7px;
+    }
+  }
+  .modal-title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+  }
+}

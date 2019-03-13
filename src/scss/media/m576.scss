@@ -1342,4 +1342,18 @@
       }
     }
   }
+  .courses-page {
+    .courses-list {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .one-course {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      .img-cont {
+        height: auto;
+      }
+    }
+  }
 }

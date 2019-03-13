@@ -705,4 +705,9 @@
       }
     } 
   }
+  .courses-page {
+    .one-course {
+      width: calc(50% - 20px);
+    }
+  }
 }
