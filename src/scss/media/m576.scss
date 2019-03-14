@@ -1054,6 +1054,28 @@
       flex: 0 0 100%;
       max-width: 100%;
     }
+    .gallery {
+      flex-wrap: wrap;
+      .swipebox {
+        max-width: 300px;
+        width: 100%;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .courses-wrap {
+      .one-course {
+        .img-cont {
+          overflow: hidden;
+          height: 290px;
+        }
+        .date {
+          font-size: 15px;
+        }
+      }
+    }
   }
   .text-container {
     font-size: 14px;
