@@ -1,5 +1,10 @@
 .text-page {
   overflow-x: hidden;
+  .h3 {
+    font-weight: 700;
+    margin: 15px 0;
+    font-size: 20px;
+  }
   & > .cont {
     padding-top: 25px;
     padding-bottom: 100px;
@@ -12,6 +17,28 @@
   }
   .table {
     margin-bottom: 30px;
+  }
+  b {
+    font-weight: 700;
+  }
+  .conclusion {
+    .row {
+      margin-left: -10px;
+      margin-right: -10px;
+
+      margin-bottom: 25px;
+    }
+    .form-group {
+      margin: 0 10px;
+    }
+  }
+  .m-b-9 {
+    margin-bottom: 9px;
+  }
+  ul {
+    li {
+      margin-bottom: 9px;
+    }
   }
 }
 .text-container {

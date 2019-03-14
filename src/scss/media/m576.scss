@@ -1038,11 +1038,21 @@
     }
   }
   .text-page {
+    & >.cont {
+      padding-bottom: 40px;
+    }
     .page-title {
       font-size: 18px;
     }
     .h1 {
       font-size: 18px;
+    }
+    .breadcrumb {
+      margin-bottom: 16px;
+    }
+    .col-xs-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
   .text-container {
